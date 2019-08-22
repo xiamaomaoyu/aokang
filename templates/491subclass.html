@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>安提瓜和巴布达</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/style.css?v=1asdf22aiasdkjnkkaejflanvijpjoiasdfowqsf790">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.0.0/dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+    <link href="/static/fontawesome-pro-5.8.1-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.9/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap@4.0.0/dist/js/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="header row" style="text-align: right; padding: 1% 3%; font-size: 18px;">
+    <div class="col-xs-6 col-sm-8 col-lg-10"></div>
+    <div class="col-xs-6 col-sm-4 col-lg-2" style="color:#051c2c;">
+        <a style="color: #033663;">联系我们</a> | <a style="color: #033663;">English</a>
+    </div>
+</div>
+
+
+<div class="header row" style="min-height: 150px; ">
+    <div class="col-xs-5 col-sm-3 col-lg-2" style="padding: 1% 5%;">
+        <img style="height: 100px; " src="../static/img/logo.png">
+    </div>
+    <div class="col-xs-7 col-sm-9 col-lg-10" style="padding: 2% 0; text-align: left;
+        font-size: 40px; font-weight: bolder; color: #033663; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif">
+        澳康移民
+    </div>
+</div>
+
+<nav class="navbar navbar-inverse  navbar-expand-sm bg-light "
+     style="background-color: white;  border: none; padding: 1% 5%; margin-bottom: 0;">
+    <ul class="nav navbar-nav"
+        style="width: 100%; font-size: 30px;color: black; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif;">
+        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("hello_world") }}">Home</a></li>
+        <li style="min-width: 150px;" class="nav-item">
+            <div class="dropdown">
+                <button class="navbar-font dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #f8f9fa">澳大利亚
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu" style="min-width: 260px; line-height: 50px;">
+                    <li><a href="#">澳洲简介</a></li>
+                    <li><a href="#">485类毕业生临时签证</a></li>
+                    <li><a href="#">雇主担保类移民</a></li>
+                    <li><a href="#">雇主担保类移民</a></li>
+                    <li><a href="#">投资类移民</a></li>
+                    <li><a href="#">技术类移民</a></li>
+                    <li><a href="#">家庭团聚类移民</a></li>
+
+                </ul>
+            </div>
+        </li>
+        <li style="min-width: 120px;" class="nav-item"><a href="#">移民快讯</a></li>
+        <li style="min-width: 120px;" class="nav-item"><a href="#">澳康新闻</a></li>
+        <li style="min-width: 120px;" class="nav-item"><a href="#">成功案例</a></li>
+        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("sai") }}">塞浦路斯</a></li>
+        <li style="min-width: 200px;" class="nav-item"><a href="{{ url_for("antigua") }}">安提瓜与巴布达</a></li>
+
+    </ul>
+</nav>
+
+<div style="position: fixed; z-index: 1; top: 30%;right: 0; padding: 17px; text-align: center; width: 200px; background-color: rgba(255,255,255,0.8);">
+    <img style="width: 170px;" src="../static/img/qrcode.png">
+    <br><br>
+    <p style="line-height: normal;">联系电话：</p>
+    <p>020-87322207</p>
+</div>
+
+<div style="padding: 2% 5%; text-align: center; font-size: 18px;" >
+    <img src="../static/img/491subclass.jpeg" height="500">
+
+    <h1 style="margin: 50px 0 20px 0;"> 利好消息：澳洲推出新的491和494签证</h1>
+    <div style="text-align: left;">
+        <p>
+            2019年11月16日，澳大利亚将推出两个全新偏远地区签证。对于一直在缩紧移民政策的澳大利亚来说，新的签证给众多申请人带来了新的希望。
+        </p>
+                <br><br><br>
+
+        <h3>491签证取代489签证</h3>
+        <p>2019年11月16日起，新偏远地区技术491签证将取代现有的489签证，成为全新的偏远地区技术移民签证，独享14000个配额。</p>
+        <h6>基本要求：</h6>
+        <ul>
+            <li>获得州政府或居住在偏远地区的亲属担保</li>
+            <li>英文达到雅思4个6或同等英语水平</li>
+            <li>有效的职业评估</li>
+            <li>获邀时不超过45岁</li>
+        </ul>
+        <p>注：一旦491 签证获批，三年之内不得再申请189签证和190签证。</p>
+
+        <h6>491签证转191 PR签证的要求：</h6>
+        <ul>
+            <li>满足在持有491签证的5年内在偏远地区居住和工作3年</li>
+            <li>遵守所有偏远地区签证的条款限制（居住、工作和学习等）</li>
+            <li>一家人中任意一人达到转191PR签证永居的要求都可以申请191PR</li>
+        </ul>
+
+        <br><br><br>
+        <h3>494签证取代187签证 </h3>
+        <p>2019年11月16日起，新偏远地区雇主担保签证494签证将取代现有的187签证，独享9000个配额，包括Employer Sponsor和Labor Agreement两个分支。</p>
+        <h6>Employer Sponsor分支基本要求：</h6>
+        <ul>
+            <li>至少3年全职工作经验且是提名职业（满足特殊规定除外）</li>
+            <li>英文达到雅思4个6或同等英语水平</li>
+            <li>有效的职业评估</li>
+            <li>获邀时不超过45岁</li>
+        </ul>
+
+        <h6>491签证转191 PR签证的要求：</h6>
+        <ul>
+            <li>满足在持有491签证的5年内在偏远地区居住和工作3年</li>
+            <li>遵守所有偏远地区签证的条款限制（居住、工作和学习等）</li>
+            <li>一家人中任意一人达到转191PR签证永居的要求都可以申请191PR。(但是494要求主申请人在担保雇主那边工作，所以这个通常情况下还是主申请人满足要求)</li>
+        </ul>
+        <p>注：在担保的雇主那边工作期间如有特殊情况可以更换雇主</p>
+        <br><br><br>
+
+        <h3>签证过渡期间解读</h3>
+        <p>1. 489和187申请人，只要在11月16日之前递交签证申请，仍然按照老政策审理，不受新政影响。（注意：支付签证申请费递交成功即可，此日期前已经递交且未审批到的申请人，也均不受新政策影响）</p>
+        <p>2. 11月16日之前递交的489签证申请， 可以按照老政策转887 PR，即在提供担保的偏远地区4年内满足生活2年并工作1年，不受新政影响。187签证申请人仍是一步到位拿PR。</p>
+
+
+                <br><br><br>
+
+        <h3>技术移民打分表变更</h3>
+        <br>
+        <p>1.偏远地区州担保，增加为加15分</p>
+        <p>通过获得偏远地区州担保申请491签证由原来的加10分变更为可以获得额外15分的加分。</p>
+        <br>
+        <p>2.澳洲STEM专业毕业生，增加为加10分</p>
+        <p>STEM指的是Science, Technology, Engineering and Mathematics，新打分表中澳洲境内研究型的科学、技术、工程和数学、IT专业的硕士和博士可由原来的加5分变更为获得10分加分。</p>
+        <br>
+        <p>3.新增配偶情况加分</p>
+        <p>（对于单身汪来说是利好消息）</p>
+        <ul>
+            <li>无配偶的单身汪，可以加10分，原来无此项</li>
+            <li>有配偶，配偶是澳洲PR或澳洲公民，可以加10分，原来无此项</li>
+            <li>有配偶，配偶有职业评估且雅思达到4个6或同等语言水平可以加10分，原来是加5分</li>
+            <li>有配偶，配偶无职业评估但雅思达到4个6或同等语言水平可以加5分，原来无此项</li>
+        </ul>
+
+        <br><br>
+        <h5>小编解读：</h5>
+        <p>此次打分项的调整很大程度上体现了政府为了吸引新移民到偏远地区发展的意图，同时会吸引相当大一部分无法达到189的申请人转向190或者491签证，水涨船高，竞争也相对更加激烈。</p>
+                <br><br><br>
+        <h2>敲重点</h2>
+        <p>1，首先给大家普及下澳洲“偏远地区”的概念。澳洲偏远地区并不是因为地理位置偏僻或者经济落后的一些城市，而是根据当地的出生率统一规划。一般来说一个地区连续两年出生率下降就会被定为“偏远地区”。所以很多地理位置并不偏僻，生活和教育水平都还挺不错的城市都被划进偏远地区了，希望大家不要因为国内传统观念对澳洲“偏远地区”产生误解而错过移民机会。</p>
+        <p>2，政府推出491和494签证很明显是希望吸引一批新移民到“偏远地区”发展，对于新签证推出，政府都会优先宽松审理。对于现在186/187雇主担保紧缩的移民环境来看，494签证代替了187签证反而是给申请人打开了一个新的大门。</p>
+        <p>3，491和494签证虽然不是直接申请PR，但是审理速度快，转PR的要求也不高，是最好的备选方案。</p>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+<div class="footer" style="padding: 2% 5%; color: #033663; background-color: #acd9fa; text-align: center">
+    <h2>About Us</h2>    <br>
+    <p>选择澳康，就是选择了成功！</p> <br>
+    <div class="row">
+        <div class="col-xs-12 col-md-4" style="text-align: center;">
+            <img src="../static/img/QRCode.jpg">
+        </div>
+        <div class="col-xs-12 col-md-4" style="text-align: left">
+            <p>中国联系方式：</p>
+            <p>电话：(020)87322207、87322192、87322493</p>
+            <p>传真：（020）87322203</p>
+            <p>地址：广州市越秀区先烈中路69号东山广场1906室</p>
+            <br>
+        </div>
+
+        <div class="col-xs-12 col-md-4" style="text-align: left">
+            <p>澳洲联系方式：</p>
+            <p>电话：(612) 96355528</p>
+            <p>Email: houkang@tpg.com.au</p>
+            <p>地址：8B, Level 2, 48 Macquarie St. Parramatta, NSW 2150 Australia</p>
+            <br>
+        </div>
+    </div>
+</div>
+
+</body>
+<footer style=" padding: 10px 5% 2px 0;  text-align: right; background-color: black; color: white">
+            <p>粤ICP备14001960号-1</p>
+</footer>
+</html>

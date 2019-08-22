@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>奥康移民</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/style.css?v=1asdf22aiasdkjnkkaejflanvijpjoiasdfowqsf790">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.0.0/dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+    <link href="/static/fontawesome-pro-5.8.1-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.9/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap@4.0.0/dist/js/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="header row" style="text-align: right; padding: 1% 3%; font-size: 18px;">
+    <div class="col-xs-6 col-sm-8 col-lg-10"></div>
+    <div class="col-xs-6 col-sm-4 col-lg-2" style="color:#051c2c;">
+        <a style="color: #033663;">联系我们</a> | <a style="color: #033663;">English</a>
+    </div>
+</div>
+
+
+<div class="header row" style="min-height: 150px; ">
+    <div class="col-xs-5 col-sm-3 col-lg-2" style="padding: 1% 5%;">
+        <img style="height: 100px; " src="../static/img/logo.png">
+    </div>
+    <div class="col-xs-7 col-sm-9 col-lg-10" style="padding: 2% 0; text-align: left;
+        font-size: 40px; font-weight: bolder; color: #033663; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif">
+        澳康移民
+    </div>
+</div>
+
+<nav class="navbar navbar-inverse  navbar-expand-sm bg-light "
+     style="background-color: white;  border: none; padding: 1% 5%; margin-bottom: 0;">
+    <ul class="nav navbar-nav"
+        style="width: 100%; font-size: 30px;color: black; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif;">
+        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("hello_world") }}">Home</a></li>
+        <li style="min-width: 150px;" class="nav-item">
+            <div class="dropdown">
+                <button class="navbar-font dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #f8f9fa">澳大利亚
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu" style="min-width: 260px; line-height: 50px;">
+                    <li><a href="#">澳洲简介</a></li>
+                    <li><a href="#">485类毕业生临时签证</a></li>
+                    <li><a href="#">雇主担保类移民</a></li>
+                    <li><a href="#">雇主担保类移民</a></li>
+                    <li><a href="#">投资类移民</a></li>
+                    <li><a href="#">技术类移民</a></li>
+                    <li><a href="#">家庭团聚类移民</a></li>
+
+                </ul>
+            </div>
+        </li>
+        <li style="min-width: 120px;" class="nav-item"><a href="#">移民快讯</a></li>
+        <li style="min-width: 120px;" class="nav-item"><a href="#">澳康新闻</a></li>
+        <li style="min-width: 120px;" class="nav-item"><a href="#">成功案例</a></li>
+        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("sai") }}">塞浦路斯</a></li>
+        <li style="min-width: 200px;" class="nav-item"><a href="{{ url_for("antigua") }}">安提瓜与巴布达</a></li>
+
+    </ul>
+</nav>
+
+<div style="position: fixed; z-index: 1; right: 0; padding: 17px; text-align: center; width: 200px; background-color: rgba(255,255,255,0.8);">
+    <img style="width: 170px;" src="../static/img/qrcode.png">
+    <br><br>
+    <p style="line-height: normal;">联系电话：</p>
+    <p>020-87322207</p>
+</div>
+
+
+<div class="main-block  row" onclick="to491()" style="background-color:  #acd9fa; padding: 0 2%; text-align: center;">
+    <script>
+        function to491() {
+            this.window.location = "{{ url_for("subclass491") }}";
+        }
+    </script>
+    <div class="col-xs-12 col-sm-12 col-lg-7" style="padding: 6% 5%; text-align: center;
+        font-size: 40px; color: #033663; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif">
+        <h1 style="font-size: 60px; font-weight: bolder;"> 重大利好消息！</h1>
+        <ul style="font-size: 50px; margin-top: 10%; margin-left: -30px; line-height: 60px;">
+            <li> 491类签证将取代489类签证</li>
+            <br>
+            <li>  494类签证将取代187类签证</li>
+
+        </ul>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-lg-5" style="padding: 5% 2%; text-align: center;">
+        <img style="width: calc(110% - ( ( 4% ) * 0.6 )); " src="../static/img/491subclass.jpeg">
+    </div>
+
+</div>
+
+<div class="main-block  row" style="background-color:  #acd9fa; padding: 0 2%; text-align: center;">
+    <div class="col-xs-12 col-sm-12 col-lg-5" style="padding: 5% 2%; text-align: center;">
+        <img style="width: calc(110% - ( ( 4% ) * 0.6 )); " src="../static/img/132subclass.jpeg">
+    </div>
+    <div class="col-xs-12 col-sm-12 col-lg-7" style="padding: 6% 5%; text-align: center;
+        font-size: 40px; color: #033663; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif">
+        <h1 style="font-size: 60px; font-weight: bolder;">132类商业天才移民</h1>
+        <ul style="font-size: 30px; margin-top: 10%; margin-left: -30px; line-height: 60px;">
+            <li> 无需打分 先拿永居 后投资</li>
+
+            <li> 无需面试 无需英语 无居住要求</li>
+            <li> 澳洲唯一的一步到位全家永居的商业移民签证</li>
+
+        </ul>
+    </div>
+
+</div>
+
+
+<div style="padding: 2% 5%;">
+
+    <h2>王牌项目</h2>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-img-top card-img-top-250">
+                    <img class="img-fluid" src="../static/img/485subclass.jpg">
+                </div>
+                <div class="card-block cardTitle" style="padding: 2%;">
+                    <h2>485类毕业生临时签证</h2>
+                    <h5> 审批速度快 可带亲属 可以读书工作 </h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-img-top card-img-top-250">
+                    <img class="img-fluid" src="../static/img/187subclass.jpg">
+                </div>
+                <div class="card-block cardTitle" style="padding: 2%;">
+                    <h2>雇主担保类技术移民</h2>
+                    <h5> 无需面试 直接永居 稳定工作 终身保障 </h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-img-top card-img-top-250">
+                    <img class="img-fluid" src="../static/img/188subclass.jpg" alt="Carousel 1">
+                </div>
+                <div class="card-block cardTitle" style="padding: 2%;">
+                    <h2>188A商业创新类签证</h2>
+                    <h5> 一人申请 全家移民 低门槛 投资方式灵活变通 </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row" style="padding: 2% 5%;">
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
+            <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
+                <a style=" color: white; margin-bottom: 0;">成功案例</a>
+
+            </div>
+        </div>
+        <marquee behavior="alternate" style="height: 500px;" scrolldelay="400" direction="up" style="font-size: 20px;">
+            <p><a>恭喜L小姐职业认证通过！</a></p>
+            <p><a>恭喜庞先生获得澳洲457类签证</a></p>
+            <p><a>恭喜陈小姐获得配偶移民100类永居签证</a></p>
+            <p><a>恭喜秦小姐获得澳洲188类签证</a></p>
+            <p><a>恭喜H先生ACS职业评估通过！</a></p>
+            <p><a>恭喜W先生获得澳洲457类签证</a></p>
+            <p><a>恭喜刘小姐获得澳洲143签证！</a></p>
+            <p><a>恭喜L小姐职业认证通过！</a></p>
+            <p><a>恭喜庞先生获得澳洲457类签证</a></p>
+            <p><a>恭喜陈小姐获得配偶移民100类永居签证</a></p>
+            <p><a>恭喜秦小姐获得澳洲188类签证</a></p>
+            <p><a>恭喜H先生ACS职业评估通过！</a></p>
+            <p><a>恭喜W先生获得澳洲457类签证</a></p>
+            <p><a>恭喜刘小姐获得澳洲143签证！</a></p>
+            <p><a>恭喜L小姐职业认证通过！</a></p>
+            <p><a>恭喜庞先生获得澳洲457类签证</a></p>
+            <p><a>恭喜陈小姐获得配偶移民100类永居签证</a></p>
+            <p><a>恭喜秦小姐获得澳洲188类签证</a></p>
+            <p><a>恭喜H先生ACS职业评估通过！</a></p>
+            <p><a>恭喜W先生获得澳洲457类签证</a></p>
+            <p><a>恭喜刘小姐获得澳洲143签证！</a></p>
+
+
+        </marquee>
+
+    </div>
+
+
+    <div class="col-md-8 col-sm-12 col-xs-12" style="min-width:400px;">
+        <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
+            <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
+                <a style=" color: white; margin-bottom: 0;">澳康画册</a>
+
+            </div>
+        </div>
+        <div>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="text-align: center">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                    <li data-target="#myCarousel" data-slide-to="6"></li>
+                    <li data-target="#myCarousel" data-slide-to="7"></li>
+                    <li data-target="#myCarousel" data-slide-to="8"></li>
+                    <li data-target="#myCarousel" data-slide-to="9"></li>
+                    <li data-target="#myCarousel" data-slide-to="10"></li>
+                    <li data-target="#myCarousel" data-slide-to="11"></li>
+                    <li data-target="#myCarousel" data-slide-to="12"></li>
+                </ul>
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../static/img/photo/PM.jpg" alt="侯康先生和澳洲前总理霍华德先生（左）" height="500">
+                        <div class="carousel-caption">
+                            <p>侯康先生和澳洲前总理霍华德先生（左）</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="../static/img/photo/PM2.jpg" alt="侯康先生与前澳洲总理、前外交部长Kevin-Michael-Rudd陆克文）（右）"
+                             height="500">
+                        <div class="carousel-caption">
+                            <p>侯康先生与前澳洲总理、前外交部长Kevin-Michael-Rudd陆克文）（右）</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="../static/img/photo/NSW_IM_officer.jpg" alt="侯康先生与新南威尔士州政府商业移民处经理Mr.-Tom-McAlary"
+                             height="500">
+                        <div class="carousel-caption">
+                            <p>侯康先生与新南威尔士州政府商业移民处经理Mr.-Tom-McAlary</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/photo/VIC_IM_officer.jpg"
+                             alt="维州政府商业移民经理Mr.Jay-Haugh左及维州政府驻华商务处经理Ms.Dorothy-Lee右" height="500">
+                        <div class="carousel-caption">
+                            <p>维州政府商业移民经理Mr.Jay-Haugh左及维州政府驻华商务处经理Ms.Dorothy-Lee右</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="../static/img/photo/SA_IM_officer.jpg" alt="侯康先生与南澳州政府商业移民处官员" height="500">
+                        <div class="carousel-caption">
+                            <p>侯康先生与南澳州政府商业移民处官员</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/photo/Membership.jpg" alt="广东省移民协会理事单位" height="500">
+                        <div class="carousel-caption">
+                            <p>广东省移民协会理事单位</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/photo/TA_ECON_officer.jpg" alt="侯康先生与塔斯马尼亚州政府经济发展部总经理Mr.Alan-Campbell"
+                             height="500">
+                        <div class="carousel-caption">
+                            <p>侯康先生与塔斯马尼亚州政府经济发展部总经理Mr.Alan-Campbell</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/photo/NA_IM_officer.jpg" alt="侯康总经理（左）与澳洲北领地州政府官员（右）" height="500">
+                        <div class="carousel-caption">
+                            <p>侯康总经理（左）与澳洲北领地州政府官员（右）</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/photo/Membership2.jpg" alt="侯康先生任广东省移民协会理事" height="500">
+                        <div class="carousel-caption">
+                            <p>侯康先生任广东省移民协会理事</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/photo/5A.jpg" alt="5A单位" height="500">
+                        <div class="carousel-caption">
+                            <p>广东省5A级诚信企业</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/photo/Defense_officer.jpg"
+                             alt="前国防部长Stephen-Smith左）、前移民和公民部部长前水利及人口社会发展部长Tony-Burke（右" height="500">
+                        <div class="carousel-caption">
+                            <p>侯康先生与前国防部长Stephen-Smith左）、前移民和公民部部长前水利及人口社会发展部长Tony-Burke（右</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/photo/Finiance_officer.jpg"
+                             alt="与澳洲工党上议院议员兼金融部部长Tont-Burke（前移民部长和水利农业部长" height="500">
+                        <div class="carousel-caption">
+                            <p>侯康先生与澳洲工党上议院议员兼金融部部长Tont-Burke（前移民部长和水利农业部长</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../static/img/photo/lingshi.jpg" alt="侯康总经理（右）与麦高文前副领事（右）合照" height="500">
+                        <div class="carousel-caption">
+                            <p>侯康总经理（右）与麦高文前副领事（右）合照</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row" style="padding: 2% 5%; ">
+    <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
+        <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
+            <a style=" color: white; margin-bottom: 0;">项目展示</a>
+        </div>
+    </div>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-pills flex-column col-xs-4 col-md-3 " style="text-align: center">
+        <li class="nav-item">
+            <a class="nav-link displayNavPill  active" style="border-radius: 0; padding: 60px 20px;" data-toggle="tab"
+               href="#home">186雇主担保</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link displayNavPill" style="border-radius: 0; padding: 60px 20px;" data-toggle="tab"
+               href="#menu1">187偏远地区雇主担保</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link displayNavPill" style="border-radius: 0; padding: 60px 20px;" data-toggle="tab"
+               href="#menu2">482澳洲临时技术短缺签证</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link displayNavPill" style="border-radius: 0; padding: 60px 20px;" data-toggle="tab"
+               href="#menu3">188A商业创新移民</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content col-xs-8 col-md-9" style="">
+        <div id="home" class="container tab-pane active"><br>
+            <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
+                <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
+                    <a style=" color: white; margin-bottom: 0;">项目优势</a>
+                </div>
+            </div>
+            <ul>
+                <li><p>一步到位获得永居身份</p></li>
+                <li><p>完全享受与澳大利亚本地人同等的福利待遇</p></li>
+                <li><p>中小学 免费教育，全家免费医疗，各项政府生活、住房津贴养老金</p></li>
+                <li><p>澳洲雇主提供长期稳定的工作机会</p></li>
+            </ul>
+
+            <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
+                <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
+                    <a style=" color: white; margin-bottom: 0;">申请条件</a>
+                </div>
+            </div>
+            <ul>
+                <li><p>本科以上学历</p></li>
+                <li><p>雅思每项6分</p></li>
+                <li><p>年龄50周岁以下</p></li>
+                <li><p>从事专业工作3年以上</p></li>
+                <li><p>通过职业评估</p></li>
+                <li><p>获得担保</p></li>
+            </ul>
+        </div>
+        <div id="menu1" class="container tab-pane fade"><br>
+            <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
+                <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
+                    <a style=" color: white; margin-bottom: 0;">项目优势</a>
+                </div>
+            </div>
+            <ul>
+                <li><p>一步到位获得永居身份</p></li>
+                <li><p>完全享受与澳大利亚本地人同等的福利待遇</p></li>
+                <li><p>中小学 免费教育，全家免费医疗，各项政府生活、住房津贴养老金</p></li>
+                <li><p>澳洲雇主提供长期稳定的工作机会</p></li>
+            </ul>
+
+            <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
+                <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
+                    <a style=" color: white; margin-bottom: 0;">申请条件</a>
+                </div>
+            </div>
+            <ul>
+                <li><p>大专或以上学历</p></li>
+                <li><p>雅思每项6分</p></li>
+                <li><p>年龄50周岁以下</p></li>
+                <li><p>获得担保</p></li>
+            </ul>
+        </div>
+        <div id="menu2" class="container tab-pane fade"><br>
+            <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
+                <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
+                    <a style=" color: white; margin-bottom: 0;">项目优势</a>
+                </div>
+            </div>
+            <ul>
+                <li><p>年龄无限制（建议42岁以下）</p></li>
+                <li><p>审理时间相对快</p></li>
+                <li><p>无须职业评估（除技工类）</p></li>
+                <li><p>雅思要求相对低</p></li>
+            </ul>
+
+            <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
+                <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
+                    <a style=" color: white; margin-bottom: 0;">申请条件</a>
+                </div>
+            </div>
+            <p>短期类申请条件：</p>
+            <ul>
+                <li><p>获得担保</p></li>
+                <li><p>从事专业工作至少2年</p></li>
+                <li><p>无需职业评估（技术类除外）</p></li>
+                <li><p>雅思平均四个5分（听说读写），每门不低于4.5分</p></li>
+            </ul>
+            <p>中长期类申请条件：</p>
+            <ul>
+                <li><p>获得担保</p></li>
+                <li><p>从事专业工作至少2年</p></li>
+                <li><p>无需职业评估（技术类除外）</p></li>
+                <li><p>雅思平均四个5分（听说读写），每门不低于4.5分</p></li>
+            </ul>
+        </div>
+        <div id="menu3" class="container tab-pane fade"><br>
+            <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
+                <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
+                    <a style=" color: white; margin-bottom: 0;">项目优势</a>
+                </div>
+            </div>
+            <ul>
+                <li><p>审核标准相对宽松</p></li>
+                <li><p>对投资金额要求相对较低</p></li>
+                <li><p>投资方式可灵活变通</p></li>
+                <li><p>完全享受与澳大利亚本地人同等的福利待遇</p></li>
+                <li><p>中小学 免费教育，全家免费医疗，各项政府生活、住房津贴养老金</p></li>
+            </ul>
+
+            <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
+                <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
+                    <a style=" color: white; margin-bottom: 0;">申请条件</a>
+                </div>
+            </div>
+            <ul>
+                <li><p>主申请人年龄须在55岁以下</p></li>
+                <li><p>打分要在65分以上</p></li>
+                <li><p>获得州政府担保</p></li>
+                <li><p>有成功的企业管理经验</p></li>
+                <li><p>过去四年内的两年，主申请人及其配偶最少须持有30%公司股份</p></li>
+                <li><p>过去四年内的两年，主申请人持股的公司的报税年营业额必须超过澳币50万元</p></li>
+                <li><p>在递交申请前，主申请人及其配偶须拥有超过澳币80万元的个人净资产</p></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer" style="padding: 2% 5%; color: #033663; background-color: #acd9fa; text-align: center">
+    <h2>About Us</h2>    <br>
+    <p>选择澳康，就是选择了成功！</p> <br>
+    <div class="row">
+        <div class="col-xs-12 col-md-4" style="text-align: center;">
+            <img src="../static/img/QRCode.jpg">
+        </div>
+        <div class="col-xs-12 col-md-4" style="text-align: left">
+            <p>中国联系方式：</p>
+            <p>电话：(020)87322207、87322192、87322493</p>
+            <p>传真：（020）87322203</p>
+            <p>地址：广州市越秀区先烈中路69号东山广场1906室</p>
+            <br>
+        </div>
+
+        <div class="col-xs-12 col-md-4" style="text-align: left">
+            <p>澳洲联系方式：</p>
+            <p>电话：(612) 96355528</p>
+            <p>Email: houkang@tpg.com.au</p>
+            <p>地址：8B, Level 2, 48 Macquarie St. Parramatta, NSW 2150 Australia</p>
+            <br>
+        </div>
+    </div>
+</div>
+
+</body>
+<footer style=" padding: 10px 5% 2px 0;  text-align: right; background-color: black; color: white">
+            <p>粤ICP备14001960号-1</p>
+</footer>
+</html>

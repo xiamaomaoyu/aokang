@@ -1,0 +1,82 @@
+.header{
+    background-color: white;
+}
+.body{
+    min-width: 320px;
+}
+.navbar-inverse .navbar-nav{
+}
+.navbar-inverse .navbar-nav>li{
+    padding: 0 1%;
+    text-align: center;
+}
+.navbar-inverse .navbar-nav>li>a {
+    font-size: 20px;
+    color: #2b2b30;
+    Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+    color: black;
+}
+
+.navbar-font{
+    font-size: 20px;
+    color: #2b2b30;
+    Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif;
+    border: none;
+}
+
+
+
+.dropdown-menu>li>a {
+    padding: 3px 8px;
+    font-size: 18px;
+    color: #2b2b30;
+    Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif;
+}
+
+.dropdown-menu>li>a:hover{
+    color: black;
+}
+
+.dropdown-menu{
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+ li {list-style-type:none;}
+
+
+.cardText{
+    color: #051c2c;
+    Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif;
+}
+
+
+.displayNavPill{
+    background-color: #acd9fa;
+    color: #051c2c;
+    border: none;
+    font-size: 20px;
+}
+
+.nav-pills > li > a.active {
+  background-color: #eeeeee !important;
+  color: #051c2c !important;
+  border-radius: 0;
+}
+
+.nav-pills > li > a:hover {
+  background-color: #dddddd;
+  color: #051c2c !important;
+}
+
+.footer{
+    margin-top: 5%;
+}
+
+.list-with-dot>li{
+    list-style-type: circle;
+}
