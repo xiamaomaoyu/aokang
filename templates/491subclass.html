@@ -54,34 +54,38 @@
 </div>
 
 <nav class="navbar navbar-inverse  navbar-expand-sm bg-light "
-     style="background-color: white;  border: none; padding: 1% 5%; margin-bottom: 0;">
+     style="background-color: white;  border: none; padding: 1% 4%; margin-bottom: 0;">
     <ul class="nav navbar-nav"
         style="width: 100%; font-size: 30px;color: black; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif;">
         <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("hello_world") }}">Home</a></li>
+        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("about") }}">关于澳康</a></li>
         <li style="min-width: 150px;" class="nav-item">
             <div class="dropdown">
                 <button class="navbar-font dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #f8f9fa">澳大利亚
                     <span class="caret"></span></button>
                 <ul class="dropdown-menu" style="min-width: 260px; line-height: 50px;">
                     <li><a href="#">澳洲简介</a></li>
-                    <li><a href="#">485类毕业生临时签证</a></li>
-                    <li><a href="#">雇主担保类移民</a></li>
-                    <li><a href="#">雇主担保类移民</a></li>
-                    <li><a href="#">投资类移民</a></li>
-                    <li><a href="#">技术类移民</a></li>
-                    <li><a href="#">家庭团聚类移民</a></li>
+                    <li><a href="{{ url_for("subclass485") }}">485类毕业生临时签证</a></li>
+                    <li><a href="{{ url_for("subclass186") }}">雇主担保类移民</a></li>
+                    <li><a href="{{ url_for("subclass188") }}">投资类移民</a></li>
+                    <li><a href="{{ url_for("subclass189") }}">技术类移民</a></li>
+                    <li><a href="{{ url_for("subclass101") }}">家庭团聚类移民</a></li>
 
                 </ul>
             </div>
         </li>
-        <li style="min-width: 120px;" class="nav-item"><a href="#">移民快讯</a></li>
-        <li style="min-width: 120px;" class="nav-item"><a href="#">澳康新闻</a></li>
-        <li style="min-width: 120px;" class="nav-item"><a href="#">成功案例</a></li>
         <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("sai") }}">塞浦路斯</a></li>
         <li style="min-width: 200px;" class="nav-item"><a href="{{ url_for("antigua") }}">安提瓜与巴布达</a></li>
-
+        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("evaluation") }}">在线评估</a></li>
+        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("newsletter") }}">澳康快讯</a></li>
+        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("hello_world") }}">成功案例</a></li>
     </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input id="search_info" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 60%">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="search_button">Search</button>
+    </form>
 </nav>
+
 
 <div style="position: fixed; z-index: 1; top: 30%;right: 0; padding: 17px; text-align: center; width: 200px; background-color: rgba(255,255,255,0.8);">
     <img style="width: 170px;" src="../static/img/qrcode.png">
@@ -204,7 +208,15 @@
         </div>
     </div>
 </div>
-
+    <script>
+        $("#search_button").click(function () {
+           if ( $("#search_info").val() === "") {
+               alert("请输入搜索信息");
+           } else {
+               window.location.assign('/search/'+$("#search_info").val())
+           }
+        });
+    </script>
 </body>
 <footer style=" padding: 10px 5% 2px 0;  text-align: right; background-color: black; color: white">
             <p>粤ICP备14001960号-1</p>
