@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在线评估</title>
+        <meta charset="UTF-8">
+    <title>澳康移民</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/style.css?v=1asdf22aiasdkjnkkaejflanvijpjoiasdfowqsf790">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.0.0/dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+    <link href="/static/fontawesome-pro-5.8.1-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.9/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap@4.0.0/dist/js/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <style type="text/css">
+      font {
+        color: red;
+      }
+    </style>
+</head>
+<body>
+
+
+    <div class="header row" style="min-height: 150px; ">
+        <div class="col-xs-5 col-sm-3 col-lg-2" style="padding: 1% 5%;">
+            <img style="height: 100px; " src="../static/img/logo.png">
+        </div>
+        <div class="col-xs-7 col-sm-9 col-lg-10" style="padding: 2% 0; text-align: left;
+            font-size: 40px; font-weight: bolder; color: #033663; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif">
+            澳康移民
+        </div>
+    </div>
+
+    <nav class="navbar navbar-inverse  navbar-expand-sm bg-light "
+         style="background-color: white;  border: none; padding: 1% 4%; margin-bottom: 0;">
+        <ul class="nav navbar-nav"
+            style="width: 100%; font-size: 30px;color: black; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif;">
+            <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("hello_world") }}">Home</a></li>
+            <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("about") }}">关于澳康</a></li>
+            <li style="min-width: 150px;" class="nav-item">
+                <div class="dropdown">
+                    <button class="navbar-font dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #f8f9fa">澳大利亚
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu" style="min-width: 260px; line-height: 50px;">
+                        <li><a href="#">澳洲简介</a></li>
+                        <li><a href="{{ url_for("subclass485") }}">485类毕业生临时签证</a></li>
+                        <li><a href="{{ url_for("subclass186") }}">雇主担保类移民</a></li>
+                        <li><a href="{{ url_for("subclass188") }}">投资类移民</a></li>
+                        <li><a href="{{ url_for("subclass189") }}">技术类移民</a></li>
+                        <li><a href="{{ url_for("subclass101") }}">家庭团聚类移民</a></li>
+
+                    </ul>
+                </div>
+            </li>
+            <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("sai") }}">塞浦路斯</a></li>
+            <li style="min-width: 200px;" class="nav-item"><a href="{{ url_for("antigua") }}">安提瓜与巴布达</a></li>
+            <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("evaluation") }}">在线评估</a></li>
+            <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("newsletter") }}">澳康快讯</a></li>
+            <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("hello_world") }}">成功案例</a></li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input id="search_info" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 60%">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="search_button">Search</button>
+        </form>
+    </nav>
+
+    <div style="position: fixed; z-index: 1; right: 0; padding: 17px; text-align: center; width: 200px; background-color: rgba(255,255,255,0.8);">
+        <img style="width: 170px;" src="../static/img/qrcode.png">
+        <br><br>
+        <p style="line-height: normal;">联系电话：</p>
+        <p>020-87322207</p>
+    </div>
+
+
+    <div class="col-xs-12 col-sm-12 col-lg-5" style="margin-left: 25%;margin-top: 5%">
+        <form method="post">
+          <h3>基础情况：</h3>
+          <!-- 姓名 -->
+          <div class="form-group">
+            <label for="name"><font>*</font> 姓名</label>
+            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="请输入姓名" name="name" required>
+          </div>
+
+          <!-- 出生日期 -->
+          <div class="form-group">
+            <label for="birth"><font>*</font> 出生日期</label>
+            <input type="date" class="form-control" id="birth" aria-describedby="emailHelp" placeholder="请输入出生日期" name="birth" required>
+          </div>
+
+          <!-- 性别 -->
+          <div class="form-group">
+            <label for="sex"><font>*</font> 性别</label>
+            <select class="form-control" id="sex" name="sex" required>
+              <option>男</option>
+              <option>女</option>
+            </select>
+          </div>
+
+          <!-- 婚姻 -->
+          <div class="form-group">
+            <label for="marriage"><font>*</font> 婚姻状况</label>
+            <select class="form-control" id="marriage" name="marriage" required>
+              <option>已婚</option>
+              <option>未婚</option>
+              <option>离异</option>
+            </select>
+          </div>
+
+          <!-- 联系电话 -->
+          <div class="form-group">
+            <label for="phone"><font>*</font> 联系电话</label>
+            <input type="number" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="请输入联系电话" name="phone" required>
+          </div>
+
+          <!-- 邮箱 -->
+          <div class="form-group">
+            <label for="email"><font>*</font> 邮箱</label>
+            <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="请输入邮箱" name="email" required>
+          </div>
+
+          <!-- 移民国度 -->
+          <div class="form-group">
+            <label for="country"><font>*</font> 移民国家</label>
+            <select class="form-control" id="country" name="country" required>
+              <option>澳洲</option>
+              <option>其他</option>
+            </select>
+          </div>
+
+          <!-- 申请人学历 -->
+          <div class="form-group">
+            <label for="study"><font>*</font> 申请人学历</label>
+            <select class="form-control" id="study" name="study" required>
+              <option>小学</option>
+              <option>初中</option>
+              <option>中专</option>
+              <option>高中</option>
+              <option>大专</option>
+              <option>本科</option>
+              <option>硕士</option>
+              <option>博士</option>
+            </select>
+          </div>
+
+          <!-- 咨询方向 -->
+          <div class="form-group">
+            <label for="dir"><font>*</font> 咨询方向</label>
+            <select class="form-control" id="dir" name="dir" required>
+              <option>技术</option>
+              <option>投资</option>
+              <option>留学</option>
+              <option>商务</option>
+              <option>家庭团聚</option>
+            </select>
+          </div>
+
+            <br>
+          <h3>综合情况: </h3>
+
+          <!-- 雅思 -->
+          <div class="form-group">
+            <label>是否考过雅思</label>
+            <select class="form-control" id="ielts" name="ielts">
+                <option>否</option>
+                <option>是</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <input style="display: none" class="form-control"  type="number" placeholder="雅思成绩" id="ielts_marks" name="ielts_marks">
+          </div>
+
+          <!-- 职称 -->
+          <div class="form-group">
+            <label>是否曾获职称</label>
+            <select class="form-control" id="job" name="job">
+              <option>否</option>
+              <option>是</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <input class="form-control" style="display: none" type="text" placeholder="职称：" id="job_type" name="job_type">
+          </div>
+
+          <!-- 证书： -->
+          <div class="form-group">
+            <label>是否考取证书</label>
+            <select class="form-control" id="certificate" name="certificate">
+              <option>否</option>
+              <option>是</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <input class="form-control" style="display: none" type="text" placeholder="证书：" id="certificate_type" name="certificate_type">
+          </div>
+
+          <!-- 关系 -->
+          <div class="form-group">
+            <label>是否有海外直系亲属</label>
+            <select class="form-control" id="relation" name="relation">
+              <option>否</option>
+              <option>是</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <input class="form-control" style="display: none" type="text" placeholder="关系：" id="relation_type" name="relation_type">
+          </div>
+
+
+          <!-- 居民 -->
+          <div class="form-group">
+            <label>是否当地公民/永久居民</label>
+            <select class="form-control" id="citizen" name="citizen">
+              <option>否</option>
+              <option>是</option>
+            </select>
+          </div>
+
+
+          <!-- 工作 -->
+          <div class="form-group">
+            <label>是否有工作或生意</label>
+            <select class="form-control" id="business" name="business">
+              <option>否</option>
+              <option>是</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <input class="form-control" style="display: none;margin-bottom: 1%" type="text" placeholder="国家：" id="business_country" name="business_country">
+            <input class="form-control" style="display: none" type="text" placeholder="所在城市：" id="business_city" name="business_city">
+          </div>
+
+          <!-- 企业 -->
+          <div class="form-group">
+            <label>是否拥有或经营企业</label>
+            <select class="form-control" id="enterprise" name="enterprise">
+              <option>否</option>
+              <option>是</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <input class="form-control" style="display: none;margin-bottom: 1%" type="text" placeholder="年数：" id="enterprise_year" name="enterprise_year">
+            <input class="form-control" style="display: none" type="text" placeholder="所占股份：" id="enterprise_per" name="enterprise_per">
+          </div>
+
+          <!-- 股份 -->
+          <div class="form-group">
+            <label for="phone">申请人（和配偶）的财产及存款总额约为人民币</label>
+            <input type="number" class="form-control" name="rmb" id="rmb" aria-describedby="emailHelp" placeholder="申请人（和配偶）的财产及存款总额约为人民币" >
+          </div>
+
+          <div class="form-group">
+            <label for="phone">备注</label>
+            <textarea type="text" class="form-control" id="remark" aria-describedby="emailHelp"name="remark"></textarea>
+          </div>
+
+            <button type="submit" class="btn btn-secondary btn-lg btn-block">提交</button>
+        </form>
+    </div>
+
+    <div class="footer" style="padding: 2% 5%; color: #033663; background-color: #acd9fa; text-align: center">
+        <h2>About Us</h2>    <br>
+        <p>选择澳康，就是选择了成功！</p> <br>
+        <div class="row">
+            <div class="col-xs-12 col-md-4" style="text-align: center;">
+                <img src="../static/img/QRCode.jpg">
+            </div>
+            <div class="col-xs-12 col-md-4" style="text-align: left">
+                <p>中国联系方式：</p>
+                <p>电话：(020)87322207、87322192、87322493</p>
+                <p>传真：（020）87322203</p>
+                <p>地址：广州市越秀区先烈中路69号东山广场1906室</p>
+                <br>
+            </div>
+
+            <div class="col-xs-12 col-md-4" style="text-align: left">
+                <p>澳洲联系方式：</p>
+                <p>电话：(612) 96355528</p>
+                <p>Email: houkang@tpg.com.au</p>
+                <p>地址：8B, Level 2, 48 Macquarie St. Parramatta, NSW 2150 Australia</p>
+                <br>
+            </div>
+        </div>
+    </div>
+
+<script>
+    $("#search_button").click(function () {
+       if ( $("#search_info").val() === "") {
+           alert("请输入搜索信息");
+       } else {
+           window.location.assign('/search/'+$("#search_info").val())
+       }
+    });
+
+    $("#ielts").change(function () {
+        var selected = $(this).children("option:selected").val();
+        if (selected === "考过") {
+            $("#ielts_marks").show();
+        } else {
+            $("#ielts_marks").hide();
+        }
+    });
+
+
+    $("#job").change(function () {
+        var selected = $(this).children("option:selected").val();
+        if (selected === "是") {
+            $("#job_type").show();
+        } else {
+            $("#job_type").hide();
+        }
+    });
+
+    $("#certificate").change(function () {
+        var selected = $(this).children("option:selected").val();
+        if (selected === "是") {
+            $("#certificate_type").show();
+        } else {
+            $("#certificate_type").hide();
+        }
+    });
+
+    $("#relation").change(function () {
+        var selected = $(this).children("option:selected").val();
+        if (selected === "是") {
+            $("#relation_type").show();
+        } else {
+            $("#relation_type").hide();
+        }
+    });
+
+
+    $("#business").change(function () {
+        var selected = $(this).children("option:selected").val();
+        if (selected === "是") {
+            $("#business_country").show();
+            $("#business_city").show();
+        } else {
+            $("#business_country").hide();
+            $("#business_city").hide();
+        }
+    });
+
+    $("#enterprise").change(function () {
+        var selected = $(this).children("option:selected").val();
+        if (selected === "是") {
+            $("#enterprise_year").show();
+            $("#enterprise_per").show();
+        } else {
+            $("#enterprise_year").hide();
+            $("#enterprise_per").hide();
+        }
+    });
+
+
+
+
+</script>
+</body>
+<footer style=" padding: 10px 5% 2px 0;  text-align: right; background-color: black; color: white">
+            <p>粤ICP备14001960号-1</p>
+</footer>
+</html>

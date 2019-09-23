@@ -35,13 +35,6 @@
 </head>
 <body>
 
-<div class="header row" style="text-align: right; padding: 1% 3%; font-size: 18px;">
-    <div class="col-xs-6 col-sm-8 col-lg-10"></div>
-    <div class="col-xs-6 col-sm-4 col-lg-2" style="color:#051c2c;">
-        <a style="color: #033663;">联系我们</a> | <a style="color: #033663;">English</a>
-    </div>
-</div>
-
 
 <div class="header row" style="min-height: 150px; ">
     <div class="col-xs-5 col-sm-3 col-lg-2" style="padding: 1% 5%;">
@@ -54,33 +47,36 @@
 </div>
 
 <nav class="navbar navbar-inverse  navbar-expand-sm bg-light "
-     style="background-color: white;  border: none; padding: 1% 5%; margin-bottom: 0;">
+     style="background-color: white;  border: none; padding: 1% 4%; margin-bottom: 0;">
     <ul class="nav navbar-nav"
         style="width: 100%; font-size: 30px;color: black; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif;">
         <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("hello_world") }}">Home</a></li>
+        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("about") }}">关于澳康</a></li>
         <li style="min-width: 150px;" class="nav-item">
             <div class="dropdown">
                 <button class="navbar-font dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #f8f9fa">澳大利亚
                     <span class="caret"></span></button>
                 <ul class="dropdown-menu" style="min-width: 260px; line-height: 50px;">
                     <li><a href="#">澳洲简介</a></li>
-                    <li><a href="#">485类毕业生临时签证</a></li>
-                    <li><a href="#">雇主担保类移民</a></li>
-                    <li><a href="#">雇主担保类移民</a></li>
-                    <li><a href="#">投资类移民</a></li>
-                    <li><a href="#">技术类移民</a></li>
-                    <li><a href="#">家庭团聚类移民</a></li>
+                    <li><a href="{{ url_for("subclass485") }}">485类毕业生临时签证</a></li>
+                    <li><a href="{{ url_for("subclass186") }}">雇主担保类移民</a></li>
+                    <li><a href="{{ url_for("subclass188") }}">投资类移民</a></li>
+                    <li><a href="{{ url_for("subclass189") }}">技术类移民</a></li>
+                    <li><a href="{{ url_for("subclass101") }}">家庭团聚类移民</a></li>
 
                 </ul>
             </div>
         </li>
-        <li style="min-width: 120px;" class="nav-item"><a href="#">移民快讯</a></li>
-        <li style="min-width: 120px;" class="nav-item"><a href="#">澳康新闻</a></li>
-        <li style="min-width: 120px;" class="nav-item"><a href="#">成功案例</a></li>
         <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("sai") }}">塞浦路斯</a></li>
         <li style="min-width: 200px;" class="nav-item"><a href="{{ url_for("antigua") }}">安提瓜与巴布达</a></li>
-
+        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("evaluation") }}">在线评估</a></li>
+        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("newsletter") }}">澳康快讯</a></li>
+        <li style="min-width: 120px;" class="nav-item"><a href="#succ">成功案例</a></li>
     </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input id="search_info" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 60%">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="search_button">Search</button>
+    </form>
 </nav>
 
 <div style="position: fixed; z-index: 1; right: 0; padding: 17px; text-align: center; width: 200px; background-color: rgba(255,255,255,0.8);">
@@ -90,54 +86,58 @@
     <p>020-87322207</p>
 </div>
 
+<marquee behavior="alternate" direction="up" style="height: 560px;" scrolldelay="100">
+    <div class="main-block  row" onclick="to491()" style="background-color:  #acd9fa; padding: 0 2%; text-align: center;">
+        <script>
+            function to491() {
+                this.window.location = "{{ url_for("subclass491") }}";
+            }
+        </script>
+        <div class="col-xs-12 col-sm-12 col-lg-7" style="padding: 6% 5%; text-align: center;
+            font-size: 40px; color: #033663; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif">
+            <h1 style="font-size: 60px; font-weight: bolder;"> 重大利好消息！</h1>
+            <ul style="font-size: 50px; margin-top: 10%; margin-left: -30px; line-height: 60px;">
+                <li> 491类签证将取代489类签证</li>
+                <br>
+                <li>  494类签证将取代187类签证</li>
 
-<div class="main-block  row" onclick="to491()" style="background-color:  #acd9fa; padding: 0 2%; text-align: center;">
-    <script>
-        function to491() {
-            this.window.location = "{{ url_for("subclass491") }}";
-        }
-    </script>
-    <div class="col-xs-12 col-sm-12 col-lg-7" style="padding: 6% 5%; text-align: center;
-        font-size: 40px; color: #033663; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif">
-        <h1 style="font-size: 60px; font-weight: bolder;"> 重大利好消息！</h1>
-        <ul style="font-size: 50px; margin-top: 10%; margin-left: -30px; line-height: 60px;">
-            <li> 491类签证将取代489类签证</li>
-            <br>
-            <li>  494类签证将取代187类签证</li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-lg-5" style="padding: 5% 2%; text-align: center;">
+            <img style="width: calc(110% - ( ( 4% ) * 0.6 )); " src="../static/img/491subclass.jpeg">
+        </div>
 
-        </ul>
-    </div>
-    <div class="col-xs-12 col-sm-12 col-lg-5" style="padding: 5% 2%; text-align: center;">
-        <img style="width: calc(110% - ( ( 4% ) * 0.6 )); " src="../static/img/491subclass.jpeg">
-    </div>
-
-</div>
-
-<div class="main-block  row" style="background-color:  #acd9fa; padding: 0 2%; text-align: center;">
-    <div class="col-xs-12 col-sm-12 col-lg-5" style="padding: 5% 2%; text-align: center;">
-        <img style="width: calc(110% - ( ( 4% ) * 0.6 )); " src="../static/img/132subclass.jpeg">
-    </div>
-    <div class="col-xs-12 col-sm-12 col-lg-7" style="padding: 6% 5%; text-align: center;
-        font-size: 40px; color: #033663; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif">
-        <h1 style="font-size: 60px; font-weight: bolder;">132类商业天才移民</h1>
-        <ul style="font-size: 30px; margin-top: 10%; margin-left: -30px; line-height: 60px;">
-            <li> 无需打分 先拿永居 后投资</li>
-
-            <li> 无需面试 无需英语 无居住要求</li>
-            <li> 澳洲唯一的一步到位全家永居的商业移民签证</li>
-
-        </ul>
     </div>
 
-</div>
+    <div class="main-block  row" onclick="to188()" style="background-color:  #acd9fa; padding: 0 2%; text-align: center;">
+        <script>
+            function to188() {
+                this.window.location = "{{ url_for("subclass188") }}";
+            }
+        </script>
+        <div class="col-xs-12 col-sm-12 col-lg-5" style="padding: 5% 2%; text-align: center;">
+            <img style="width: calc(110% - ( ( 4% ) * 0.6 )); " src="../static/img/132subclass.jpeg">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-lg-7" style="padding: 6% 5%; text-align: center;
+            font-size: 40px; color: #033663; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif">
+            <h1 style="font-size: 60px; font-weight: bolder;">132类商业天才移民</h1>
+            <ul style="font-size: 30px; margin-top: 10%; margin-left: -30px; line-height: 60px;">
+                <li> 无需打分 先拿永居 后投资</li>
 
+                <li> 无需面试 无需英语 无居住要求</li>
+                <li> 澳洲唯一的一步到位全家永居的商业移民签证</li>
+
+            </ul>
+        </div>
+    </div>
+</marquee>
 
 <div style="padding: 2% 5%;">
 
     <h2>王牌项目</h2>
 
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4" onclick="go485()">
             <div class="card">
                 <div class="card-img-top card-img-top-250">
                     <img class="img-fluid" src="../static/img/485subclass.jpg">
@@ -148,7 +148,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" onclick="go186()">
             <div class="card">
                 <div class="card-img-top card-img-top-250">
                     <img class="img-fluid" src="../static/img/187subclass.jpg">
@@ -159,7 +159,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" onclick="go188()">
             <div class="card">
                 <div class="card-img-top card-img-top-250">
                     <img class="img-fluid" src="../static/img/188subclass.jpg" alt="Carousel 1">
@@ -174,12 +174,11 @@
 </div>
 
 
-<div class="row" style="padding: 2% 5%;">
+<div class="row" style="padding: 2% 5%;" id="succ">
     <div class="col-md-4 col-sm-12 col-xs-12">
         <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
             <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
                 <a style=" color: white; margin-bottom: 0;">成功案例</a>
-
             </div>
         </div>
         <marquee behavior="alternate" style="height: 500px;" scrolldelay="400" direction="up" style="font-size: 20px;">
@@ -204,7 +203,6 @@
             <p><a>恭喜H先生ACS职业评估通过！</a></p>
             <p><a>恭喜W先生获得澳洲457类签证</a></p>
             <p><a>恭喜刘小姐获得澳洲143签证！</a></p>
-
 
         </marquee>
 
@@ -508,6 +506,27 @@
     </div>
 </div>
 
+<script>
+    function go485() {
+        this.window.location = "{{ url_for("subclass491") }}";
+    }
+
+    function go186() {
+        this.window.location = "{{ url_for("subclass186") }}";
+    }
+
+    function go188() {
+        this.window.location = "{{ url_for("subclass188") }}";
+    }
+
+    $("#search_button").click(function () {
+       if ( $("#search_info").val() === "") {
+           alert("请输入搜索信息");
+       } else {
+           window.location.assign('/search/'+$("#search_info").val())
+       }
+    });
+</script>
 </body>
 <footer style=" padding: 10px 5% 2px 0;  text-align: right; background-color: black; color: white">
             <p>粤ICP备14001960号-1</p>
