@@ -1,258 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>塞浦路斯</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/static/style.css?v=1asdf22aiasdkjnkkaejflanvijpjoiasdfowqsf790">
+{% extends 'base.html' %}
+{% block body %}
+    <div class="contain" style="padding: 2% 10%;margin: 5%">
+        <img src="../static/img/Blog/AntiguaAndBarbuda/head.jpeg" height="500" style="margin-left: 10%">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.0.0/dist/css/bootstrap.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <h2 style="margin: 50px 0 20px 0;"> 塞浦路斯 </h2>
 
-    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
-    <link href="/static/fontawesome-pro-5.8.1-web/css/all.css" rel="stylesheet"> <!--load all styles -->
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-pills  " style="text-align: center">
+                <li class="nav-item">
+                    <a class="nav-link displayNavPill  active" style="border-radius: 0; padding: 20px 20px;"
+                       data-toggle="tab"
+                       href="#home">塞浦路斯介绍</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link displayNavPill" style="border-radius: 0; padding: 20px 20px;" data-toggle="tab"
+                       href="#menu1">护照项目</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link displayNavPill" style="border-radius: 0; padding: 20px 20px;" data-toggle="tab"
+                       href="#menu2">永居项目</a>
+                </li>
 
-    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
-    <script src="https://unpkg.com/popper.js@1.12.9/dist/umd/popper.js"></script>
-    <script src="https://unpkg.com/bootstrap@4.0.0/dist/js/bootstrap.js"></script>
+            </ul>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-</head>
-<body>
+            <!-- Tab panes -->
+            <div class="tab-content" style=" text-align: left;">
+                <div id="home" class=" tab-pane active"><br>
+                    <p>
+                        对于投资移民来说，人们往往会选择那些移民条件宽松的国家进行投资移民。塞浦路斯移民项目越来越受到人们的青睐，这不仅仅是因为购房即可获得塞浦路斯移民身份的缘故，塞浦路斯的完善先进的教育体制，也是很多移民人士看中的要素之一。</p>
+                    <p>【国名】：塞浦路斯共和国(The Republic of Cyprus)</p>
+                    <p>【面积】：9,251平方公里，其中北部土族区面积3,355平方公里(2008年数据)。</p>
+                    <p>
+                        【人口】：约113万。其中希腊族占76.8%，土耳其族占10.3%，另有少数亚美尼亚、拉丁和马龙族占1%，外籍人占11.9%。主要语言为希腊语和土耳其语，通用英语。希腊族信奉东正教，土耳其族信奉伊斯兰教。</p>
+                    <p>【首都】：尼科西亚(Nicosia)，人口36.3万。年均最高气温31℃～37℃，最低气温5℃～15℃。
+                    </p>
+                    <p>【简况】：位于地中海东北部，为地中海第三大岛。海岸线全长782公里。属于亚热带地中海型气候，夏季干热，冬季温湿。夏季平均气温28℃～35℃，冬季4℃～10℃。</p>
+                    <br>
+                    <h4>实行英联邦教育</h4>
+                    <p>英国的教育制度，英国的教师授课，让你在塞浦路斯得到纯正的英国教育。大学有：塞浦路斯环球学院、CyprusCollege、Inter College。<br>
+                        塞 浦路斯的教育体系与传统欧、美国家教育体系相似。小学、中学实行义务、免费教育制度。大学以私立院校为主，开设从证书、文凭、学士到硕士学位课程，专业设
+                        置比较齐全，实行学分制，学生只要得到规定的学分，就能获得相应的学位。塞浦路斯的大学国际化程度较高，主要体现在两方面：一是和英、美等国家的许多大学
+                        学分和学位相互承认;二是学校之间相互转学不受限制。塞浦路斯的大学年学费和英美等国相比是非常低廉的，不到英美大学的1/2。</p>
+                    <br>
 
-<div class="header row" style="text-align: right; padding: 1% 3%; font-size: 18px;">
-    <div class="col-xs-6 col-sm-8 col-lg-10"></div>
-    <div class="col-xs-6 col-sm-4 col-lg-2" style="color:#051c2c;">
-        <a style="color: #033663;">联系我们</a> | <a style="color: #033663;">English</a>
-    </div>
-</div>
-
-
-<div class="header row" style="min-height: 150px; ">
-    <div class="col-xs-5 col-sm-3 col-lg-2" style="padding: 1% 5%;">
-        <img style="height: 100px; " src="../static/img/logo.png">
-    </div>
-    <div class="col-xs-7 col-sm-9 col-lg-10" style="padding: 2% 0; text-align: left;
-        font-size: 40px; font-weight: bolder; color: #033663; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif">
-        澳康移民
-    </div>
-</div>
-
-<nav class="navbar navbar-inverse  navbar-expand-sm bg-light "
-     style="background-color: white;  border: none; padding: 1% 4%; margin-bottom: 0;">
-    <ul class="nav navbar-nav"
-        style="width: 100%; font-size: 30px;color: black; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif;">
-        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("hello_world") }}">Home</a></li>
-        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("about") }}">关于澳康</a></li>
-        <li style="min-width: 150px;" class="nav-item">
-            <div class="dropdown">
-                <button class="navbar-font dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #f8f9fa">澳大利亚
-                    <span class="caret"></span></button>
-                <ul class="dropdown-menu" style="min-width: 260px; line-height: 50px;">
-                    <li><a href="#">澳洲简介</a></li>
-                    <li><a href="{{ url_for("subclass485") }}">485类毕业生临时签证</a></li>
-                    <li><a href="{{ url_for("subclass186") }}">雇主担保类移民</a></li>
-                    <li><a href="{{ url_for("subclass188") }}">投资类移民</a></li>
-                    <li><a href="{{ url_for("subclass189") }}">技术类移民</a></li>
-                    <li><a href="{{ url_for("subclass101") }}">家庭团聚类移民</a></li>
-
-                </ul>
-            </div>
-        </li>
-        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("sai") }}">塞浦路斯</a></li>
-        <li style="min-width: 200px;" class="nav-item"><a href="{{ url_for("antigua") }}">安提瓜与巴布达</a></li>
-            <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("evaluation") }}">在线评估</a></li>
-        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("newsletter") }}">澳康快讯</a></li>
-        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("hello_world") }}">成功案例</a></li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input id="search_info" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 60%">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="search_button">Search</button>
-    </form>
-</nav>
-
-
-<div style="position: fixed; z-index: 1; right: 0; padding: 17px; text-align: center; width: 200px; background-color: rgba(255,255,255,0.8);">
-    <img style="width: 170px;" src="../static/img/qrcode.png">
-    <br><br>
-    <p style="line-height: normal;">联系电话：</p>
-    <p>020-87322207</p>
-</div>
-
-<div style="padding: 2% 5%; text-align: center; font-size: 18px;">
-    <img src="../static/img/Blog/AntiguaAndBarbuda/head.jpeg" height="500">
-
-    <h2 style="margin: 50px 0 20px 0;"> 塞浦路斯 </h2>
-
-    <div>
-        <!-- Nav tabs -->
-        <ul class="nav nav-pills  " style="text-align: center">
-            <li class="nav-item">
-                <a class="nav-link displayNavPill  active" style="border-radius: 0; padding: 20px 20px;"
-                   data-toggle="tab"
-                   href="#home">塞浦路斯介绍</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link displayNavPill" style="border-radius: 0; padding: 20px 20px;" data-toggle="tab"
-                   href="#menu1">护照项目</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link displayNavPill" style="border-radius: 0; padding: 20px 20px;" data-toggle="tab"
-                   href="#menu2">永居项目</a>
-            </li>
-
-        </ul>
-
-        <!-- Tab panes -->
-        <div class="tab-content" style=" text-align: left;">
-            <div id="home" class=" tab-pane active"><br>
-                <p>
-                    对于投资移民来说，人们往往会选择那些移民条件宽松的国家进行投资移民。塞浦路斯移民项目越来越受到人们的青睐，这不仅仅是因为购房即可获得塞浦路斯移民身份的缘故，塞浦路斯的完善先进的教育体制，也是很多移民人士看中的要素之一。</p>
-                <p>【国名】：塞浦路斯共和国(The Republic of Cyprus)</p>
-                <p>【面积】：9,251平方公里，其中北部土族区面积3,355平方公里(2008年数据)。</p>
-                <p>
-                    【人口】：约113万。其中希腊族占76.8%，土耳其族占10.3%，另有少数亚美尼亚、拉丁和马龙族占1%，外籍人占11.9%。主要语言为希腊语和土耳其语，通用英语。希腊族信奉东正教，土耳其族信奉伊斯兰教。</p>
-                <p>【首都】：尼科西亚(Nicosia)，人口36.3万。年均最高气温31℃～37℃，最低气温5℃～15℃。
-                </p>
-                <p>【简况】：位于地中海东北部，为地中海第三大岛。海岸线全长782公里。属于亚热带地中海型气候，夏季干热，冬季温湿。夏季平均气温28℃～35℃，冬季4℃～10℃。</p>
-                <br>
-                <h4>实行英联邦教育</h4>
-                <p>英国的教育制度，英国的教师授课，让你在塞浦路斯得到纯正的英国教育。大学有：塞浦路斯环球学院、CyprusCollege、Inter College。<br>
-                    塞 浦路斯的教育体系与传统欧、美国家教育体系相似。小学、中学实行义务、免费教育制度。大学以私立院校为主，开设从证书、文凭、学士到硕士学位课程，专业设
-                    置比较齐全，实行学分制，学生只要得到规定的学分，就能获得相应的学位。塞浦路斯的大学国际化程度较高，主要体现在两方面：一是和英、美等国家的许多大学
-                    学分和学位相互承认;二是学校之间相互转学不受限制。塞浦路斯的大学年学费和英美等国相比是非常低廉的，不到英美大学的1/2。</p>
-                <br>
-
-                <h4>税收计划</h4>
-                <p>
-                    2004年塞浦路斯加入欧盟以后，对其税收管理体制进行了大幅改革，不仅与欧盟规定保持一致，同时亦完全符合OECD承诺要求。总体而言，塞凭借优越的地理位置，较低的税率水平，欧盟成员国身份及发达的双重征税协定网络，成为跨国公司进行国际税收筹划的理想选择地之一。</p>
-                <br>
-                <h4>社会福利</h4>
-                <p>塞浦路斯的福利制度基本与欧洲国家的福利制度相同，属于高福利国家。</p>
-                <br>
-            </div>
-            <div id="menu1" class=" tab-pane fade"><br>
-                <p>2014年3月28日，塞浦路斯政府宣布更改外国投资者通过归化入籍成为塞浦路斯(欧盟)公民，并获得塞浦路斯护照的立法，使其比以往更加便利实惠。欧盟
-                    公民指任何一个拥有欧盟国籍的人。欧盟护照的持有人可以在欧洲经济区(欧盟、冰岛、列支敦士登、挪威和瑞士)自由出入，居住，学习和工作，无需签证。</p>
-                <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
-                    <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
-                        <a style=" font-size: 15px; color: white; margin-bottom: 0;">项目优势</a>
-                    </div>
+                    <h4>税收计划</h4>
+                    <p>
+                        2004年塞浦路斯加入欧盟以后，对其税收管理体制进行了大幅改革，不仅与欧盟规定保持一致，同时亦完全符合OECD承诺要求。总体而言，塞凭借优越的地理位置，较低的税率水平，欧盟成员国身份及发达的双重征税协定网络，成为跨国公司进行国际税收筹划的理想选择地之一。</p>
+                    <br>
+                    <h4>社会福利</h4>
+                    <p>塞浦路斯的福利制度基本与欧洲国家的福利制度相同，属于高福利国家。</p>
+                    <br>
                 </div>
-                <ul class="list-with-dot">
-                    <li><p>政策明确：3个月之内即可获欧盟护照，100%获批。</p></li>
-                    <li><p>年龄宽松：可带走28岁以下在读孩子及配偶入籍。</p></li>
-                    <li><p>世代相传：房产拥有永久产权，欧盟身份世代相传。</p></li>
-                    <li><p>畅通全球：自由往返28个欧洲国家，免签全球157个国家，享受欧盟公民待遇。</p></li>
-                    <li><p>品质生活：28个欧盟成员国以及瑞士、挪威和冰岛，自由居住、学习、生活和工作，享受欧 盟教育、医疗、工作、失业等福利待遇。</p></li>
-                </ul>
-                <br><br>
-                <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
-                    <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
-                        <a style="font-size: 15px; color: white; margin-bottom: 0;">申请条件</a>
+                <div id="menu1" class=" tab-pane fade"><br>
+                    <p>2014年3月28日，塞浦路斯政府宣布更改外国投资者通过归化入籍成为塞浦路斯(欧盟)公民，并获得塞浦路斯护照的立法，使其比以往更加便利实惠。欧盟
+                        公民指任何一个拥有欧盟国籍的人。欧盟护照的持有人可以在欧洲经济区(欧盟、冰岛、列支敦士登、挪威和瑞士)自由出入，居住，学习和工作，无需签证。</p>
+                    <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
+                        <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
+                            <a style=" font-size: 15px; color: white; margin-bottom: 0;">项目优势</a>
+                        </div>
                     </div>
-                </div>
-                <ul class="list-with-dot">
-                    <li><p> 无犯罪纪录;</p></li>
-                    <li><p>投资净值250万欧元(非商业用房);</p></li>
-                    <li><p> 或投资净值250万欧元房产加净值50万欧元自住房;</p></li>
-                    <li><p> 主申请人年满18周岁以上;</p></li>
-                    <li><p> 为持有公民身份，投资者必须始终持有至少50万欧元的房产，其余投资可在3年后出售;</p></li>
+                    <ul class="list-with-dot">
+                        <li><p>政策明确：3个月之内即可获欧盟护照，100%获批。</p></li>
+                        <li><p>年龄宽松：可带走28岁以下在读孩子及配偶入籍。</p></li>
+                        <li><p>世代相传：房产拥有永久产权，欧盟身份世代相传。</p></li>
+                        <li><p>畅通全球：自由往返28个欧洲国家，免签全球157个国家，享受欧盟公民待遇。</p></li>
+                        <li><p>品质生活：28个欧盟成员国以及瑞士、挪威和冰岛，自由居住、学习、生活和工作，享受欧 盟教育、医疗、工作、失业等福利待遇。</p></li>
+                    </ul>
+                    <br><br>
+                    <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
+                        <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
+                            <a style="font-size: 15px; color: white; margin-bottom: 0;">申请条件</a>
+                        </div>
+                    </div>
+                    <ul class="list-with-dot">
+                        <li><p> 无犯罪纪录;</p></li>
+                        <li><p>投资净值250万欧元(非商业用房);</p></li>
+                        <li><p> 或投资净值250万欧元房产加净值50万欧元自住房;</p></li>
+                        <li><p> 主申请人年满18周岁以上;</p></li>
+                        <li><p> 为持有公民身份，投资者必须始终持有至少50万欧元的房产，其余投资可在3年后出售;</p></li>
 
-                </ul>
-                <br><br>
+                    </ul>
+                    <br><br>
+                </div>
+                <div id="menu2" class=" tab-pane fade"><br><br>
+                    <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
+                        <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
+                            <a style=" font-size: 15px; color: white; margin-bottom: 0;">项目优势</a>
+                        </div>
+                    </div>
+                    <ul class="list-with-dot">
+                        <li><p>审理速度快，2个月即可取得永居身份;</p></li>
+                        <li><p>移民监，只需每两年登陆一次，不影响在国内的正常生活与工作;</p></li>
+                        <li><p>门槛低，无资金来源及经商经验的要求;</p></li>
+                        <li><p>投资额低，接受房产投资，稳定无风险;</p></li>
+                        <li><p>承认双重国籍;</p></li>
+                        <li><p>一人申请，全家人可获得移民身份;</p></li>
+                        <li><p>累计住满7 年可以入籍，取得护照后，自由往返151个国家和地区;</p></li>
+                        <li><p>投资的房产可以自己住，也可以出租，没有限制;</p></li>
+                        <li><p>永久地契，可世代相传。</p></li>
+
+                    </ul>
+                    <br><br>
+                    <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
+                        <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
+                            <a style="font-size: 15px; color: white; margin-bottom: 0;">申请条件</a>
+                        </div>
+                    </div>
+                    <ul class="list-with-dot">
+                        <li><p> 主申请人必须年满18 周岁，无犯罪记录;</p></li>
+                        <li><p>在塞浦路斯购买净值30 万欧元或以上的房产;</p></li>
+                        <li><p> 在个人及配偶名下有等值30 万欧元资产证明，并提供证明文件(存款、房产、公司资产均可);</p></li>
+
+                    </ul>
+                    <br><br>
+                </div>
+
             </div>
-            <div id="menu2" class=" tab-pane fade"><br><br>
-                <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
-                    <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
-                        <a style=" font-size: 15px; color: white; margin-bottom: 0;">项目优势</a>
-                    </div>
-                </div>
-                <ul class="list-with-dot">
-                    <li><p>审理速度快，2个月即可取得永居身份;</p></li>
-                    <li><p>移民监，只需每两年登陆一次，不影响在国内的正常生活与工作;</p></li>
-                    <li><p>门槛低，无资金来源及经商经验的要求;</p></li>
-                    <li><p>投资额低，接受房产投资，稳定无风险;</p></li>
-                    <li><p>承认双重国籍;</p></li>
-                    <li><p>一人申请，全家人可获得移民身份;</p></li>
-                    <li><p>累计住满7 年可以入籍，取得护照后，自由往返151个国家和地区;</p></li>
-                    <li><p>投资的房产可以自己住，也可以出租，没有限制;</p></li>
-                    <li><p>永久地契，可世代相传。</p></li>
-
-                </ul>
-                <br><br>
-                <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
-                    <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
-                        <a style="font-size: 15px; color: white; margin-bottom: 0;">申请条件</a>
-                    </div>
-                </div>
-                <ul class="list-with-dot">
-                    <li><p> 主申请人必须年满18 周岁，无犯罪记录;</p></li>
-                    <li><p>在塞浦路斯购买净值30 万欧元或以上的房产;</p></li>
-                    <li><p> 在个人及配偶名下有等值30 万欧元资产证明，并提供证明文件(存款、房产、公司资产均可);</p></li>
-
-                </ul>
-                <br><br>
-            </div>
-
         </div>
     </div>
-
-
-</div>
-</div>
-
-
-<div class="footer" style="padding: 2% 5%; color: #033663; background-color: #acd9fa; text-align: center">
-    <h2>About Us</h2>    <br>
-    <p>选择澳康，就是选择了成功！</p> <br>
-    <div class="row">
-        <div class="col-xs-12 col-md-4" style="text-align: center;">
-            <img src="../static/img/QRCode.jpg">
-        </div>
-        <div class="col-xs-12 col-md-4" style="text-align: left">
-            <p>中国联系方式：</p>
-            <p>电话：(020)87322207、87322192、87322493</p>
-            <p>传真：（020）87322203</p>
-            <p>地址：广州市越秀区先烈中路69号东山广场1906室</p>
-            <br>
-        </div>
-
-        <div class="col-xs-12 col-md-4" style="text-align: left">
-            <p>澳洲联系方式：</p>
-            <p>电话：(612) 96355528</p>
-            <p>Email: houkang@tpg.com.au</p>
-            <p>地址：8B, Level 2, 48 Macquarie St. Parramatta, NSW 2150 Australia</p>
-            <br>
-        </div>
-    </div>
-</div>
-    <script>
-        $("#search_button").click(function () {
-           if ( $("#search_info").val() === "") {
-               alert("请输入搜索信息");
-           } else {
-               window.location.assign('/search/'+$("#search_info").val())
-           }
-        });
-    </script>
-</body>
-<footer style=" padding: 10px 5% 2px 0;  text-align: right; background-color: black; color: white">
-    <p>粤ICP备14001960号-1</p>
-</footer>
-</html>
+{% endblock %}

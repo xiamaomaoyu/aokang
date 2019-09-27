@@ -1,623 +1,188 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>澳康快讯</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/static/style.css?v=1asdf22aiasdkjnkkaejflanvijpjoiasdfowqsf790">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.0.0/dist/css/bootstrap.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
-    <link href="/static/fontawesome-pro-5.8.1-web/css/all.css" rel="stylesheet"> <!--load all styles -->
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
-    <script src="https://unpkg.com/popper.js@1.12.9/dist/umd/popper.js"></script>
-    <script src="https://unpkg.com/bootstrap@4.0.0/dist/js/bootstrap.js"></script>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
-html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
-iframe { margin: auto; }
-a.url { word-break: break-all; }
-a:active, a:hover { outline: 0px; }
-.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
-#write.first-line-indent p { text-indent: 2em; }
-#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
-#write.first-line-indent li { margin-left: 2em; }
-.for-image #write { padding-left: 8px; padding-right: 8px; }
-body.typora-export { padding-left: 30px; padding-right: 30px; }
-.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
-@media screen and (max-width: 500px) { 
-  body.typora-export { padding-left: 0px; padding-right: 0px; }
-  #write { padding-left: 20px; padding-right: 20px; }
-  .CodeMirror-sizer { margin-left: 0px !important; }
-  .CodeMirror-gutters { display: none !important; }
-}
-#write li > figure:last-child { margin-bottom: 0.5rem; }
-#write ol, #write ul { position: relative; }
-img { max-width: 100%; vertical-align: middle; }
-button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
-input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
-*, ::after, ::before { box-sizing: border-box; }
-#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
-#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
-p { line-height: inherit; }
-h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
-p { orphans: 4; }
-h1 { font-size: 2rem; }
-h2 { font-size: 1.8rem; }
-h3 { font-size: 1.6rem; }
-h4 { font-size: 1.4rem; }
-h5 { font-size: 1.2rem; }
-h6 { font-size: 1rem; }
-.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
-.hidden { display: none; }
-.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
-a { cursor: pointer; }
-sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
-sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
-#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
-figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
-figure > table { margin: 0px !important; }
-tr { break-inside: avoid; break-after: auto; }
-thead { display: table-header-group; }
-table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
-table.md-table td { min-width: 32px; }
-.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
-.CodeMirror-linenumber { }
-.CodeMirror { text-align: left; }
-.CodeMirror-placeholder { opacity: 0.3; }
-.CodeMirror pre { padding: 0px 4px; }
-.CodeMirror-lines { padding: 0px; }
-div.hr:focus { cursor: none; }
-#write pre { white-space: pre-wrap; }
-#write.fences-no-line-wrapping pre { white-space: pre; }
-#write pre.ty-contain-cm { white-space: normal; }
-.CodeMirror-gutters { margin-right: 4px; }
-.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
-.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
-#write .md-fences.mock-cm { white-space: pre-wrap; }
-.md-fences.md-fences-with-lineno { padding-left: 0px; }
-#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
-.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
-.CodeMirror-line, twitterwidget { break-inside: avoid; }
-.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
-.footnotes + .footnotes { margin-top: 0px; }
-.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
-li div { padding-top: 0px; }
-blockquote { margin: 1rem 0px; }
-li .mathjax-block, li p { margin: 0.5rem 0px; }
-li { margin: 0px; position: relative; }
-blockquote > :last-child { margin-bottom: 0px; }
-blockquote > :first-child, li > :first-child { margin-top: 0px; }
-.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
-#write .footnote-line { white-space: pre-wrap; }
-@media print { 
-  body, html { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
-  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
-  .typora-export * { -webkit-print-color-adjust: exact; }
-  html.blink-to-pdf { font-size: 13px; }
-  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid-page; }
-  .typora-export #write::after { height: 0px; }
-}
-.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
-a img, img a { cursor: pointer; }
-pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
-p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
-p > .md-image:only-child { display: inline-block; width: 100%; }
-#write .MathJax_Display { margin: 0.8em 0px 0px; }
-.md-math-block { width: 100%; }
-.md-math-block:not(:empty)::after { display: none; }
-[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
-.md-task-list-item { position: relative; list-style-type: none; }
-.task-list-item.md-task-list-item { padding-left: 0px; }
-.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
-.math { font-size: 1rem; }
-.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
-.md-toc-content { position: relative; margin-left: 0px; }
-.md-toc-content::after, .md-toc::after { display: none; }
-.md-toc-item { display: block; color: rgb(65, 131, 196); }
-.md-toc-item a { text-decoration: none; }
-.md-toc-inner:hover { text-decoration: underline; }
-.md-toc-inner { display: inline-block; cursor: pointer; }
-.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
-.md-toc-h2 .md-toc-inner { margin-left: 2em; }
-.md-toc-h3 .md-toc-inner { margin-left: 4em; }
-.md-toc-h4 .md-toc-inner { margin-left: 6em; }
-.md-toc-h5 .md-toc-inner { margin-left: 8em; }
-.md-toc-h6 .md-toc-inner { margin-left: 10em; }
-@media screen and (max-width: 48em) { 
-  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
-  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
-  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
-  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
-}
-a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
-.footnote-line a:not(.reversefootnote) { color: inherit; }
-.md-attr { display: none; }
-.md-fn-count::after { content: "."; }
-code, pre, samp, tt { font-family: var(--monospace); }
-kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
-.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
-code { text-align: left; }
-a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
-.md-inline-math .MathJax_SVG .noError { display: none !important; }
-.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
-.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
-.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
-.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
-.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
-.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
-.MathJax_SVG * { transition: none; }
-.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
-.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
-.md-diagram-panel > svg { max-width: 100%; }
-[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
-[lang="mermaid"] .node text { font-size: 1rem; }
-table tr th { border-bottom-width: 0px; }
-video { max-width: 100%; display: block; margin: 0px auto; }
-iframe { max-width: 100%; width: 100%; border: none; }
-.highlight td, .highlight tr { border: 0px; }
-
-
-:root {
-    --side-bar-bg-color: #fafafa;
-    --control-text-color: #777;
-}
-
-@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
-
-html {
-    font-size: 16px;
-}
-
-body {
-    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: rgb(51, 51, 51);
-    line-height: 1.6;
-}
-
-#write {
-    max-width: 860px;
-  	margin: 0 auto;
-  	padding: 30px;
-    padding-bottom: 100px;
-}
-#write > ul:first-child,
-#write > ol:first-child{
-    margin-top: 30px;
-}
-
-a {
-    color: #4183C4;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    position: relative;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    line-height: 1.4;
-    cursor: text;
-}
-h1:hover a.anchor,
-h2:hover a.anchor,
-h3:hover a.anchor,
-h4:hover a.anchor,
-h5:hover a.anchor,
-h6:hover a.anchor {
-    text-decoration: none;
-}
-h1 tt,
-h1 code {
-    font-size: inherit;
-}
-h2 tt,
-h2 code {
-    font-size: inherit;
-}
-h3 tt,
-h3 code {
-    font-size: inherit;
-}
-h4 tt,
-h4 code {
-    font-size: inherit;
-}
-h5 tt,
-h5 code {
-    font-size: inherit;
-}
-h6 tt,
-h6 code {
-    font-size: inherit;
-}
-h1 {
-    padding-bottom: .3em;
-    font-size: 2.25em;
-    line-height: 1.2;
-    border-bottom: 1px solid #eee;
-}
-h2 {
-   padding-bottom: .3em;
-    font-size: 1.75em;
-    line-height: 1.225;
-    border-bottom: 1px solid #eee;
-}
-h3 {
-    font-size: 1.5em;
-    line-height: 1.43;
-}
-h4 {
-    font-size: 1.25em;
-}
-h5 {
-    font-size: 1em;
-}
-h6 {
-   font-size: 1em;
-    color: #777;
-}
-p,
-blockquote,
-ul,
-ol,
-dl,
-table{
-    margin: 0.8em 0;
-}
-li>ol,
-li>ul {
-    margin: 0 0;
-}
-hr {
-    height: 2px;
-    padding: 0;
-    margin: 16px 0;
-    background-color: #e7e7e7;
-    border: 0 none;
-    overflow: hidden;
-    box-sizing: content-box;
-}
-
-li p.first {
-    display: inline-block;
-}
-ul,
-ol {
-    padding-left: 30px;
-}
-ul:first-child,
-ol:first-child {
-    margin-top: 0;
-}
-ul:last-child,
-ol:last-child {
-    margin-bottom: 0;
-}
-blockquote {
-    border-left: 4px solid #dfe2e5;
-    padding: 0 15px;
-    color: #777777;
-}
-blockquote blockquote {
-    padding-right: 0;
-}
-table {
-    padding: 0;
-    word-break: initial;
-}
-table tr {
-    border-top: 1px solid #dfe2e5;
-    margin: 0;
-    padding: 0;
-}
-table tr:nth-child(2n),
-thead {
-    background-color: #f8f8f8;
-}
-table tr th {
-    font-weight: bold;
-    border: 1px solid #dfe2e5;
-    border-bottom: 0;
-    margin: 0;
-    padding: 6px 13px;
-}
-table tr td {
-    border: 1px solid #dfe2e5;
-    margin: 0;
-    padding: 6px 13px;
-}
-table tr th:first-child,
-table tr td:first-child {
-    margin-top: 0;
-}
-table tr th:last-child,
-table tr td:last-child {
-    margin-bottom: 0;
-}
-
-.CodeMirror-lines {
-    padding-left: 4px;
-}
-
-.code-tooltip {
-    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
-    border-top: 1px solid #eef2f2;
-}
-
-.md-fences,
-code,
-tt {
-    border: 1px solid #e7eaed;
-    background-color: #f8f8f8;
-    border-radius: 3px;
-    padding: 0;
-    padding: 2px 4px 0px 4px;
-    font-size: 0.9em;
-}
-
-code {
-    background-color: #f3f4f4;
-    padding: 0 2px 0 2px;
-}
-
-.md-fences {
-    margin-bottom: 15px;
-    margin-top: 15px;
-    padding-top: 8px;
-    padding-bottom: 6px;
-}
-
-
-.md-task-list-item > input {
-  margin-left: -1.3em;
-}
-
-@media print {
-    html {
-        font-size: 13px;
-    }
-    table,
-    pre {
-        page-break-inside: avoid;
-    }
-    pre {
-        word-wrap: break-word;
-    }
-}
-
-.md-fences {
-	background-color: #f8f8f8;
-}
-#write pre.md-meta-block {
-	padding: 1rem;
-    font-size: 85%;
-    line-height: 1.45;
-    background-color: #f7f7f7;
-    border: 0;
-    border-radius: 3px;
-    color: #777777;
-    margin-top: 0 !important;
-}
-
-.mathjax-block>.code-tooltip {
-	bottom: .375rem;
-}
-
-.md-mathjax-midline {
-    background: #fafafa;
-}
-
-#write>h3.md-focus:before{
-	left: -1.5625rem;
-	top: .375rem;
-}
-#write>h4.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
-}
-#write>h5.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
-}
-#write>h6.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
-}
-.md-image>.md-meta {
-    /*border: 1px solid #ddd;*/
-    border-radius: 3px;
-    padding: 2px 0px 0px 4px;
-    font-size: 0.9em;
-    color: inherit;
-}
-
-.md-tag {
-    color: #a7a7a7;
-    opacity: 1;
-}
-
-.md-toc { 
-    margin-top:20px;
-    padding-bottom:20px;
-}
-
-.sidebar-tabs {
-    border-bottom: none;
-}
-
-#typora-quick-open {
-    border: 1px solid #ddd;
-    background-color: #f8f8f8;
-}
-
-#typora-quick-open-item {
-    background-color: #FAFAFA;
-    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
-    border-style: solid;
-    border-width: 1px;
-}
-
-/** focus mode */
-.on-focus-mode blockquote {
-    border-left-color: rgba(85, 85, 85, 0.12);
-}
-
-header, .context-menu, .megamenu-content, footer{
-    font-family: "Segoe UI", "Arial", sans-serif;
-}
-
-.file-node-content:hover .file-node-icon,
-.file-node-content:hover .file-node-open-state{
-    visibility: visible;
-}
-
-.mac-seamless-mode #typora-sidebar {
-    background-color: #fafafa;
-    background-color: var(--side-bar-bg-color);
-}
-
-.md-lang {
-    color: #b4654d;
-}
-
-.html-for-mac .context-menu {
-    --item-hover-bg-color: #E6F0FE;
-}
-
-#md-notification .btn {
-    border: 0;
-}
-
-.dropdown-menu .divider {
-    border-color: #e5e5e5;
-}
-
-.ty-preferences .window-content {
-    background-color: #fafafa;
-}
-
-.ty-preferences .nav-group-item.active {
-    color: white;
-    background: #999;
-}
-
- .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
-</style>
-</head>
-<body class='typora-export' style="padding: 0%"  >
-<div class="header row" style="min-height: 150px; ">
-    <div class="col-xs-5 col-sm-3 col-lg-2" style="padding: 1% 5%;">
-        <img style="height: 100px; " src="../static/img/logo.png">
-    </div>
-    <div class="col-xs-7 col-sm-9 col-lg-10" style="padding: 2% 0; text-align: left;
-        font-size: 40px; font-weight: bolder; color: #033663; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif">
-        澳康移民
-    </div>
-</div>
-<nav class="navbar navbar-inverse  navbar-expand-sm bg-light "
-     style="background-color: white;  border: none; padding: 1% 4%; margin-bottom: 0;">
-    <ul class="nav navbar-nav"
-        style="width: 100%; font-size: 30px;color: black; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif;">
-        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("hello_world") }}">Home</a></li>
-        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("about") }}">关于澳康</a></li>
-        <li style="min-width: 150px;" class="nav-item">
-            <div class="dropdown">
-                <button class="navbar-font dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #f8f9fa">澳大利亚
-                    <span class="caret"></span></button>
-                <ul class="dropdown-menu" style="min-width: 260px; line-height: 50px;">
-                    <li><a href="#">澳洲简介</a></li>
-                    <li><a href="{{ url_for("subclass485") }}">485类毕业生临时签证</a></li>
-                    <li><a href="{{ url_for("subclass186") }}">雇主担保类移民</a></li>
-                    <li><a href="{{ url_for("subclass188") }}">投资类移民</a></li>
-                    <li><a href="{{ url_for("subclass189") }}">技术类移民</a></li>
-                    <li><a href="{{ url_for("subclass101") }}">家庭团聚类移民</a></li>
-
-                </ul>
-            </div>
-        </li>
-        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("sai") }}">塞浦路斯</a></li>
-        <li style="min-width: 200px;" class="nav-item"><a href="{{ url_for("antigua") }}">安提瓜与巴布达</a></li>
-            <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("evaluation") }}">在线评估</a></li>
-        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("newsletter") }}">澳康快讯</a></li>
-        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("hello_world") }}">成功案例</a></li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input id="search_info" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 50%">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="search_button">Search</button>
-    </form>
-</nav>
-
-
-<div style="position: fixed; z-index: 1; right: 0; padding: 17px; text-align: center; width: 200px; background-color: rgba(255,255,255,0.8);">
-    <img style="width: 170px;" src="../static/img/qrcode.png">
-    <br><br>
-    <p style="line-height: normal;">联系电话：</p>
-    <p>020-87322207</p>
-</div>
-
-<div  id='write'  class = 'is-mac'><p>&nbsp;</p><div class='md-toc' mdtype='toc'><p class="md-toc-content"><span class="md-toc-item md-toc-h1" data-ref="n316"><a class="md-toc-inner" href="#1利好消息--澳洲推出新的491和494签证">1、利好消息--澳洲推出新的491和494签证</a></span><span class="md-toc-item md-toc-h2" data-ref="n68"><a class="md-toc-inner" href="#基本要求">基本要求:</a></span><span class="md-toc-item md-toc-h2" data-ref="n331"><a class="md-toc-inner" href="#491签证转191-pr签证的要求">491签证转191 PR签证的要求:</a></span><span class="md-toc-item md-toc-h2" data-ref="n336"><a class="md-toc-inner" href="#employer-sponsor分支基本要求">Employer Sponsor分支基本要求:</a></span><span class="md-toc-item md-toc-h2" data-ref="n338"><a class="md-toc-inner" href="#494签证转191-pr签证的要求">494签证转191 PR签证的要求:</a></span><span class="md-toc-item md-toc-h2" data-ref="n340"><a class="md-toc-inner" href="#签证过渡期间解读">签证过渡期间解读</a></span><span class="md-toc-item md-toc-h2" data-ref="n342"><a class="md-toc-inner" href="#技术移民打分表变更">技术移民打分表变更</a></span><span class="md-toc-item md-toc-h2" data-ref="n347"><a class="md-toc-inner" href="#小编解读">小编解读：</a></span><span class="md-toc-item md-toc-h2" data-ref="n349"><a class="md-toc-inner" href="#敲重点">敲重点：</a></span><span class="md-toc-item md-toc-h1" data-ref="n222"><a class="md-toc-inner" href="#2-中澳自由贸易协定将从2015年12月20日起为两国带来重大利益">2. 中澳自由贸易协定将从2015年12月20日起为两国带来重大利益</a></span><span class="md-toc-item md-toc-h1" data-ref="n232"><a class="md-toc-inner" href="#3-2015-2015年财政年度移民政策综述">3. 2015-2015年财政年度移民政策综述</a></span><span class="md-toc-item md-toc-h1" data-ref="n245"><a class="md-toc-inner" href="#4-澳大利亚为中国游客提供的创新的签证">4. 澳大利亚为中国游客提供的创新的签证</a></span><span class="md-toc-item md-toc-h1" data-ref="n253"><a class="md-toc-inner" href="#5-澳洲重启非贡献类父母和其他家庭类移民签证">5. 澳洲重启非贡献类父母和其他家庭类移民签证</a></span><span class="md-toc-item md-toc-h1" data-ref="n286"><a class="md-toc-inner" href="#6-重大投资者签证于2012年11月24日推行">6. 重大投资者签证于2012年11月24日推行！！</a></span><span class="md-toc-item md-toc-h1" data-ref="n296"><a class="md-toc-inner" href="#7-澳洲7月起技术移民将实施新政">7. 澳洲7月起技术移民将实施新政</a></span></p></div><h1><a name="1利好消息--澳洲推出新的491和494签证" class="md-header-anchor"></a><span>1、利好消息--澳洲推出新的491和494签证</span></h1><p><span>2019年11月16日，澳大利亚将推出两个全新偏远地区签证。对于一直在缩紧移民政策的澳大利亚来说，新的签证给众多申请人带来了新的希望。</span></p><p><span> </span></p><p><span>491签证取代489签证</span></p><p><span>2019年11月16日起，新偏远地区技术491签证将取代现有的489签证，成为全新的偏远地区技术移民签证，独享14000个配额。</span></p><p>&nbsp;</p><h2><a name="基本要求" class="md-header-anchor"></a><span>基本要求:</span></h2><ul><li><p><span>获得州政府或居住在偏远地区的亲属担保</span></p></li><li><p><span>英文达到雅思4个6或同等英语水平</span></p></li><li><p><span>有效的职业评估</span></p></li><li><p><span>获邀时不超过45岁</span></p><p><span>注：一旦491 签证获批，三年之内不得再申请189签证和190签证。</span></p></li></ul><p>&nbsp;</p><h2><a name="491签证转191-pr签证的要求" class="md-header-anchor"></a><span>491签证转191 PR签证的要求:</span></h2><ul><li><span>满足在持有491签证的5年内在偏远地区居住和工作3年；</span></li><li><span>遵守所有偏远地区签证的条款限制（居住、工作和学习等）；</span></li><li><span>一家人中任意一人达到转191PR签证永居的要求都可以申请191PR；</span></li></ul><p><span>494签证取代187签证 </span></p><p><span>2019年11月16日起，新偏远地区雇主担保签证494签证将取代现有的187签证，独享9000个配额，包括Employer Sponsor和Labor Agreement两个分支。</span></p><p>&nbsp;</p><h2><a name="employer-sponsor分支基本要求" class="md-header-anchor"></a><span>Employer Sponsor分支基本要求:</span></h2><ul><li><span>至少3年全职工作经验且是提名职业（满足特殊规定除外）；</span></li><li><span>英文达到雅思4个6或同等英语水平；</span></li><li><span>有效的职业评估；</span></li><li><span>不超过45岁；</span></li></ul><p>&nbsp;</p><h2><a name="494签证转191-pr签证的要求" class="md-header-anchor"></a><span>494签证转191 PR签证的要求:</span></h2><ul><li><span>满足在持有491签证的5年内在偏远地区居住和工作3年；</span></li><li><span>遵守所有偏远地区签证的条款限制（居住、工作和学习等）；</span></li><li><span>一家人中任意一人达到转191PR签证永居的要求都可以申请191PR(但是494要求主申请人在担保雇主那边工作，所以这个通常情况下还是主申请人满足要求)；</span></li></ul><p><span>注：在担保的雇主那边工作期间如有特殊情况可以更换雇主</span></p><p>&nbsp;</p><h2><a name="签证过渡期间解读" class="md-header-anchor"></a><span>签证过渡期间解读</span></h2><ol><li><span>489和187申请人，只要在11月16日之前递交签证申请，仍然按照老政策审理，不受新政影响。（注意：支付签证申请费递交成功即可，此日期前已经递交且未审批到的申请人，也均不受新政策影响）</span></li><li><span>11月16日之前递交的489签证申请， 可以按照老政策转887 PR，即在提供担保的偏远地区4年内满足生活2年并工作1年，不受新政影响。187签证申请人仍是一步到位拿PR。</span></li></ol><p>&nbsp;</p><h2><a name="技术移民打分表变更" class="md-header-anchor"></a><span>技术移民打分表变更</span></h2><ol><li><p><span>偏远地区州担保，增加为加15分通过获得偏远地区州担保申请491签证由原来的加10分变更为可以获得额外15分的加分。</span></p></li><li><p><span>澳洲STEM专业毕业生，增加为加10分STEM指的是Science, Technology, Engineering and Mathematics，新打分表中澳洲境内研究型的科学、技术、工程和数学、IT专业的硕士和博士可由原来的加5分变更为获得10分加分。</span></p></li><li><p><span>新增配偶情况加分（对于单身汪来说是利好消息）</span></p><ul><li><span>无配偶的单身汪，可以加10分，原来无此项；</span></li></ul><ul><li><span>有配偶，配偶是澳洲PR或澳洲公民，可以加10分，原来无此项；</span></li><li><span>有配偶，配偶有职业评估且雅思达到4个6或同等语言水平可以加10分，原来是加5分</span></li><li><span>有配偶，配偶无职业评估但雅思达到4个6或同等语言水平可以加5分，原来无此项；</span></li></ul></li></ol><p>&nbsp;</p><h2><a name="小编解读" class="md-header-anchor"></a><span>小编解读：</span></h2><p><span>此次打分项的调整很大程度上体现了政府为了吸引新移民到偏远地区发展的意图，同时会吸引相当大一部分无法达到189的申请人转向190或者491签证，水涨船高，竞争也相对更加激烈。</span></p><p>&nbsp;</p><h2><a name="敲重点" class="md-header-anchor"></a><span>敲重点：</span></h2><ol><li><span>首先给大家普及下澳洲“偏远地区”的概念。澳洲偏远地区并不是因为地理位置偏僻或者经济落后的一些城市，而是根据当地的出生率统一规划。一般来说一个地区连续两年出生率下降就会被定为“偏远地区”。所以很多地理位置并不偏僻，生活和教育水平都还挺不错的城市都被划进偏远地区了，希望大家不要因为国内传统观念对澳洲“偏远地区”产生误解而错过移民机会。</span></li><li><span>政府推出491和494签证很明显是希望吸引一批新移民到“偏远地区”发展，对于新签证推出，政府都会优先宽松审理。对于现在186/187雇主担保紧缩的移民环境来看，494签证代替了187签证反而是给申请人打开了一个新的大门。</span></li><li><span>491和494签证虽然不是直接申请PR，但是审理速度快，转PR的要求也不高，是最好的备选方案。</span></li></ol><p>&nbsp;</p><h1><a name="2-中澳自由贸易协定将从2015年12月20日起为两国带来重大利益" class="md-header-anchor"></a><span>2. 中澳自由贸易协定将从2015年12月20日起为两国带来重大利益</span></h1><p><span>澳大利亚贸易与投资部长安德鲁·罗布宣布：具有历史意义的中澳自由贸易协定将从2015年12月20日开始为两国带来重大利益。</span></p><p><span>这是继澳大利亚候任驻华大使Jan Adams和中国驻澳大利亚大使马朝旭在悉尼进行了重要的“文本交换”，正式确定澳大利亚和中国现已满足各自国内对中澳自贸协定正式生效的要求之后宣布的。</span></p><p><span>中澳自贸协定正式生效后，86%的出口至中国的澳大利亚商品（2014年价值超过860亿澳元）将以零关税进入中国。在这一协定全面执行后，这一比例将上升至96%。</span></p><p><span>澳大利亚服务业的供应商和投资者也将从12月20日起开始从新的以及改善后的准入条件中受益。随着关税的消除，包括电子产品、服装和其他家用产品在内的中国商品也将令消费者受益。</span></p><p><span>中澳自贸协定的正式生效使得澳大利亚政府在贸易领域获得了强有力的三连胜。澳大利亚已与我们最大的四个出口市场中的其中三个— 中国、日本和韩国完成了自贸协定，占我们全部出口的49%。</span></p><p><span>这些自贸协定将与泛太平洋合作伙伴协定（TPP）一道为澳大利亚的创新企业进入全球最大和最有活力的市场提供前所未有的准入机会。</span></p><p>&nbsp;</p><h1><a name="3-2015-2015年财政年度移民政策综述" class="md-header-anchor"></a><span>3. 2015-2015年财政年度移民政策综述</span></h1><p><span>2015——2016年财政年度开始后一些值得关注的移民政策</span></p><p><span>一、188A将允许主副申请人自由互换。</span></p><p><span>简而言之，如果主申请人一时走不开，配偶可以代替其到澳大利亚进行创业，以及完成创业后全家转永居。</span></p><p><span>二、开放给中国申请人打工度假签证、十年旅游签证（暂没执行）。</span></p><p><span>打工度假签证（subclass 462)，这种签证将允许最多5000名接受过高等教育并有英文技能的中国年轻人赴澳打工度假。因此此类签证有基本学历、基本英语等申请要求，将于9月份正式开始接受申请。目前，十年旅游签证暂没开始执行，更多细节需等官方公布。</span></p><p>&nbsp;</p><h1><a name="4-澳大利亚为中国游客提供的创新的签证" class="md-header-anchor"></a><span>4. 澳大利亚为中国游客提供的创新的签证</span></h1><p><span>澳洲贸易与投资部部长Andrew Robb(安德鲁•罗布)议员阁下, 于2015年4月10日宣布澳大利亚为中国游客提供签证服务的最新的创新– 向在网上递交试行系统批准的申请人发放3年多次往返签证。</span></p><p>&nbsp;</p><h1><a name="5-澳洲重启非贡献类父母和其他家庭类移民签证" class="md-header-anchor"></a><span>5. 澳洲重启非贡献类父母和其他家庭类移民签证</span></h1><p><span>从2014年9月25日起，家庭移民里的以下类别可以接收新申请：</span></p><ul><li><span>父母签证（103类别）</span></li><li><span>年老父母签证（804类别）</span></li><li><span>年老受照顾类签证（114类别和838类别）</span></li><li><span>最后家庭成员类签证（115类别和835类别）</span></li><li><span>照顾类签证（116类别和836类别）</span></li></ul><p>&nbsp;</p><h1><a name="6-重大投资者签证于2012年11月24日推行" class="md-header-anchor"></a><span>6. 重大投资者签证于2012年11月24日推行！！</span></h1><p><span>澳大利亚移民部长Chris Bowen确立于2012年11月24日正式实施！此乃是澳洲联邦政府的商业创造与投资计划之其中的一向重要部分。</span></p><p><span>此类别亦需通过SKILL SELECT递交意向书，而日后成功获批的信签证人，在首四年签证有效签证，且需要在澳洲居留160天！</span></p><p>&nbsp;</p><h1><a name="7-澳洲7月起技术移民将实施新政" class="md-header-anchor"></a><span>7. 澳洲7月起技术移民将实施新政</span></h1><p><span>澳洲移民部最近出台新的移民政策——澳洲将于2012年7月1日起实行信的技术移民政策——SkillSelect.</span></p><p><span>SkillSelect是一个网上系统，可以给有兴趣移民到澳洲的技术人员通过EOI来表达移民意向，并记录他们移民过程中的详细情况。</span></p><p><span>澳洲雇主或州和领地政府可通过这个系发现和提名有意移民澳洲的人，澳洲政府也可能邀请有意向移民的人递交签证申请。</span></p><p><span>这将极大地使移民部降低处理签证申请的时间及有助于解决地区性人才短缺的问题。</span></p><p>&nbsp;</p></div>
-
-<div class="footer" style="padding: 2% 5%; color: #033663; background-color: #acd9fa; text-align: center">
-    <h2>About Us</h2>    <br>
-    <p>选择澳康，就是选择了成功！</p> <br>
-    <div class="row">
-        <div class="col-xs-12 col-md-4" style="text-align: center;">
-            <img src="../static/img/QRCode.jpg">
-        </div>
-        <div class="col-xs-12 col-md-4" style="text-align: left">
-            <p>中国联系方式：</p>
-            <p>电话：(020)87322207、87322192、87322493</p>
-            <p>传真：（020）87322203</p>
-            <p>地址：广州市越秀区先烈中路69号东山广场1906室</p>
-            <br>
+{% extends 'base.html' %}
+{% block body %}
+    <style>
+        h1{
+            margin-top: 6%;
+        }
+        h2{
+            margin-top: 6%;
+        }
+        ol li {
+            list-style-type: decimal;
+        }
+    </style>
+    <div class="contain" style="padding: 2% 10%;margin: 5%">
+        <div style="margin-bottom: 5%">
+            <li><a href="#1491494">1. 利好消息--澳洲推出新的491和494签证</a></li>
+            <li><a href="#220151220">2. 中澳自由贸易协定将从2015年12月20日起为两国带来重大利益</a></li>
+            <li><a href="#320152015">3. 2015-2015年财政年度移民政策综述</a></li>
+            <li><a href="#4">4. 澳大利亚为中国游客提供的创新的签证</a></li>
+            <li><a href="#5">5. 澳洲重启非贡献类父母和其他家庭类移民签证</a></li>
+            <li><a href="#620121124">6. 重大投资者签证于2012年11月24日推行！！</a></li>
+            <li><a href="#77">7. 澳洲7月起技术移民将实施新政</a></li>
         </div>
 
-        <div class="col-xs-12 col-md-4" style="text-align: left">
-            <p>澳洲联系方式：</p>
-            <p>电话：(612) 96355528</p>
-            <p>Email: houkang@tpg.com.au</p>
-            <p>地址：8B, Level 2, 48 Macquarie St. Parramatta, NSW 2150 Australia</p>
-            <br>
-        </div>
+        <h1 id="1491494">1、利好消息--澳洲推出新的491和494签证</h1>
+
+        <p>2019年11月16日，澳大利亚将推出两个全新偏远地区签证。对于一直在缩紧移民政策的澳大利亚来说，新的签证给众多申请人带来了新的希望。</p>
+
+        <p>491签证取代489签证</p>
+
+        <p>2019年11月16日起，新偏远地区技术491签证将取代现有的489签证，成为全新的偏远地区技术移民签证，独享14000个配额。</p>
+
+        <h2 id="">基本要求:</h2>
+
+        <ol>
+        <li><p>获得州政府或居住在偏远地区的亲属担保</p></li>
+
+        <li><p>英文达到雅思4个6或同等英语水平</p></li>
+
+        <li><p>有效的职业评估</p></li>
+
+        <li><p>获邀时不超过45岁</p>
+
+        <p>注：一旦491 签证获批，三年之内不得再申请189签证和190签证。</p></li>
+        </ol>
+
+        <h2 id="491191pr">491签证转191 PR签证的要求:</h2>
+
+        <ol>
+        <li>满足在持有491签证的5年内在偏远地区居住和工作3年；</li>
+
+        <li>遵守所有偏远地区签证的条款限制（居住、工作和学习等）；</li>
+
+        <li>一家人中任意一人达到转191PR签证永居的要求都可以申请191PR；</li>
+        </ol>
+
+        <p>494签证取代187签证 </p>
+
+        <p>2019年11月16日起，新偏远地区雇主担保签证494签证将取代现有的187签证，独享9000个配额，包括Employer Sponsor和Labor Agreement两个分支。</p>
+
+        <h2 id="employersponsor">Employer Sponsor分支基本要求:</h2>
+
+        <ol>
+        <li>至少3年全职工作经验且是提名职业（满足特殊规定除外）；</li>
+
+        <li>英文达到雅思4个6或同等英语水平；</li>
+
+        <li>有效的职业评估；</li>
+
+        <li>不超过45岁；</li>
+        </ol>
+
+        <h2 id="494191pr">494签证转191 PR签证的要求:</h2>
+
+        <ol>
+        <li>满足在持有491签证的5年内在偏远地区居住和工作3年；</li>
+
+        <li>遵守所有偏远地区签证的条款限制（居住、工作和学习等）；</li>
+
+        <li>一家人中任意一人达到转191PR签证永居的要求都可以申请191PR(但是494要求主申请人在担保雇主那边工作，所以这个通常情况下还是主申请人满足要求)；</li>
+        </ol>
+
+        <p>注：在担保的雇主那边工作期间如有特殊情况可以更换雇主</p>
+
+        <h2 id="-1">签证过渡期间解读</h2>
+
+        <ol>
+        <li>489和187申请人，只要在11月16日之前递交签证申请，仍然按照老政策审理，不受新政影响。（注意：支付签证申请费递交成功即可，此日期前已经递交且未审批到的申请人，也均不受新政策影响）</li>
+
+        <li>11月16日之前递交的489签证申请， 可以按照老政策转887 PR，即在提供担保的偏远地区4年内满足生活2年并工作1年，不受新政影响。187签证申请人仍是一步到位拿PR。</li>
+        </ol>
+
+        <h2 id="-2">技术移民打分表变更</h2>
+
+        <ol>
+        <li><p>偏远地区州担保，增加为加15分通过获得偏远地区州担保申请491签证由原来的加10分变更为可以获得额外15分的加分。</p></li>
+
+        <li><p>澳洲STEM专业毕业生，增加为加10分STEM指的是Science, Technology, Engineering and Mathematics，新打分表中澳洲境内研究型的科学、技术、工程和数学、IT专业的硕士和博士可由原来的加5分变更为获得10分加分。</p></li>
+
+        <li><p>新增配偶情况加分（对于单身汪来说是利好消息）</p>
+
+        <ol>
+        <li><p>无配偶的单身汪，可以加10分，原来无此项；</p></li>
+
+        <li><p>有配偶，配偶是澳洲PR或澳洲公民，可以加10分，原来无此项；</p></li>
+
+        <li><p>有配偶，配偶有职业评估且雅思达到4个6或同等语言水平可以加10分，原来是加5分</p></li>
+
+        <li><p>有配偶，配偶无职业评估但雅思达到4个6或同等语言水平可以加5分，原来无此项；</p></li></ol></li>
+        </ol>
+
+        <h2 id="-3">小编解读：</h2>
+
+        <p>此次打分项的调整很大程度上体现了政府为了吸引新移民到偏远地区发展的意图，同时会吸引相当大一部分无法达到189的申请人转向190或者491签证，水涨船高，竞争也相对更加激烈。</p>
+
+        <h2 id="-4">敲重点：</h2>
+
+        <ol>
+        <li>首先给大家普及下澳洲“偏远地区”的概念。澳洲偏远地区并不是因为地理位置偏僻或者经济落后的一些城市，而是根据当地的出生率统一规划。一般来说一个地区连续两年出生率下降就会被定为“偏远地区”。所以很多地理位置并不偏僻，生活和教育水平都还挺不错的城市都被划进偏远地区了，希望大家不要因为国内传统观念对澳洲“偏远地区”产生误解而错过移民机会。</li>
+
+        <li>政府推出491和494签证很明显是希望吸引一批新移民到“偏远地区”发展，对于新签证推出，政府都会优先宽松审理。对于现在186/187雇主担保紧缩的移民环境来看，494签证代替了187签证反而是给申请人打开了一个新的大门。</li>
+
+        <li>491和494签证虽然不是直接申请PR，但是审理速度快，转PR的要求也不高，是最好的备选方案。</li>
+        </ol>
+
+        <h1 id="220151220">2. 中澳自由贸易协定将从2015年12月20日起为两国带来重大利益</h1>
+
+        <p>澳大利亚贸易与投资部长安德鲁·罗布宣布：具有历史意义的中澳自由贸易协定将从2015年12月20日开始为两国带来重大利益。</p>
+
+        <p>这是继澳大利亚候任驻华大使Jan Adams和中国驻澳大利亚大使马朝旭在悉尼进行了重要的“文本交换”，正式确定澳大利亚和中国现已满足各自国内对中澳自贸协定正式生效的要求之后宣布的。</p>
+
+        <p>中澳自贸协定正式生效后，86%的出口至中国的澳大利亚商品（2014年价值超过860亿澳元）将以零关税进入中国。在这一协定全面执行后，这一比例将上升至96%。</p>
+
+        <p>澳大利亚服务业的供应商和投资者也将从12月20日起开始从新的以及改善后的准入条件中受益。随着关税的消除，包括电子产品、服装和其他家用产品在内的中国商品也将令消费者受益。</p>
+
+        <p>中澳自贸协定的正式生效使得澳大利亚政府在贸易领域获得了强有力的三连胜。澳大利亚已与我们最大的四个出口市场中的其中三个— 中国、日本和韩国完成了自贸协定，占我们全部出口的49%。</p>
+
+        <p>这些自贸协定将与泛太平洋合作伙伴协定（TPP）一道为澳大利亚的创新企业进入全球最大和最有活力的市场提供前所未有的准入机会。</p>
+
+        <h1 id="320152015">3. 2015-2015年财政年度移民政策综述</h1>
+
+        <p>2015——2016年财政年度开始后一些值得关注的移民政策</p>
+
+        <p>一、188A将允许主副申请人自由互换。</p>
+
+        <p>简而言之，如果主申请人一时走不开，配偶可以代替其到澳大利亚进行创业，以及完成创业后全家转永居。</p>
+
+        <p>二、开放给中国申请人打工度假签证、十年旅游签证（暂没执行）。</p>
+
+        <p>打工度假签证（subclass 462)，这种签证将允许最多5000名接受过高等教育并有英文技能的中国年轻人赴澳打工度假。因此此类签证有基本学历、基本英语等申请要求，将于9月份正式开始接受申请。目前，十年旅游签证暂没开始执行，更多细节需等官方公布。</p>
+
+        <h1 id="4">4. 澳大利亚为中国游客提供的创新的签证</h1>
+
+        <p>澳洲贸易与投资部部长Andrew Robb(安德鲁•罗布)议员阁下, 于2015年4月10日宣布澳大利亚为中国游客提供签证服务的最新的创新– 向在网上递交试行系统批准的申请人发放3年多次往返签证。</p>
+
+        <h1 id="5">5. 澳洲重启非贡献类父母和其他家庭类移民签证</h1>
+
+        <p>从2014年9月25日起，家庭移民里的以下类别可以接收新申请：</p>
+
+        <ol>
+        <li>父母签证（103类别）</li>
+
+        <li>年老父母签证（804类别）</li>
+
+        <li>年老受照顾类签证（114类别和838类别）</li>
+
+        <li>最后家庭成员类签证（115类别和835类别）</li>
+
+        <li>照顾类签证（116类别和836类别）</li>
+        </ol>
+
+        <h1 id="620121124">6. 重大投资者签证于2012年11月24日推行！！</h1>
+
+        <p>澳大利亚移民部长Chris Bowen确立于2012年11月24日正式实施！此乃是澳洲联邦政府的商业创造与投资计划之其中的一向重要部分。</p>
+
+        <p>此类别亦需通过SKILL SELECT递交意向书，而日后成功获批的信签证人，在首四年签证有效签证，且需要在澳洲居留160天！</p>
+
+        <h1 id="77">7. 澳洲7月起技术移民将实施新政</h1>
+
+        <p>澳洲移民部最近出台新的移民政策——澳洲将于2012年7月1日起实行信的技术移民政策——SkillSelect.</p>
+
+        <p>SkillSelect是一个网上系统，可以给有兴趣移民到澳洲的技术人员通过EOI来表达移民意向，并记录他们移民过程中的详细情况。</p>
+
+        <p>澳洲雇主或州和领地政府可通过这个系发现和提名有意移民澳洲的人，澳洲政府也可能邀请有意向移民的人递交签证申请。</p>
+
+        <p>这将极大地使移民部降低处理签证申请的时间及有助于解决地区性人才短缺的问题。</p>
     </div>
-</div>
-    <script>
-        $("#search_button").click(function () {
-           if ( $("#search_info").val() === "") {
-               alert("请输入搜索信息");
-           } else {
-               window.location.assign('/search/'+$("#search_info").val())
-           }
-        });
-    </script>
-</body>
-<footer style=" padding: 10px 5% 2px 0;  text-align: right; background-color: black; color: white">
-            <p>粤ICP备14001960号-1</p>
-</footer>
-</html>
+{% endblock %}
