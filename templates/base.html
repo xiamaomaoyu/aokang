@@ -20,6 +20,8 @@
     <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
     <script src="https://unpkg.com/popper.js@1.12.9/dist/umd/popper.js"></script>
     <script src="https://unpkg.com/bootstrap@4.0.0/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -34,6 +36,7 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
+
     <!-- logo !-->
     <div class="header row" style="min-height: 150px; ">
         <div class="col-xs-5 col-sm-3 col-lg-2" style="padding: 1% 5%;">
@@ -46,9 +49,9 @@
     </div>
 
     <!-- 导航栏 !-->
-    <nav class="navbar navbar-inverse  navbar-expand-sm bg-light "
+    <nav class="navbar navbar-inverse navbar-expand-lg bg-light "
          style="background-color: white;  border: none; padding: 1% 4%; margin-bottom: 0;">
-        <ul class="nav navbar-nav"
+        <ul id="bars" class="nav navbar-nav"
             style="width: 100%; font-size: 30px;color: black; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif;">
             <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("hello_world") }}">Home</a></li>
             <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("about") }}">关于澳康</a></li>
@@ -70,9 +73,14 @@
             <li style="min-width: 200px;" class="nav-item"><a href="{{ url_for("antigua") }}">安提瓜与巴布达</a></li>
             <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("evaluation") }}">在线评估</a></li>
             <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("newsletter") }}">澳康快讯</a></li>
+            <li style="min-width: 120px;" class="nav-item"><i class="fa fa-search" id="searchbar"></i></li>
         </ul>
-        <div class="form-inline my-2 my-lg-0">
-          <input id="search_info" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+        <div class="input-group input-group-lg" id="searin" style="display: none">
+          <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" id="search_info">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-lg"><i class="fa fa-close" id="s_c"></i></span>
+          </div>
         </div>
     </nav>
 
@@ -122,6 +130,20 @@
                }
             }
         });
+
+        var b_bar = $("#bars");
+        var s_bar = $("#searin");
+
+        $("#searchbar").click(function () {
+            b_bar.hide();
+            s_bar.show();
+        });
+
+        $("#s_c").click(function () {
+            b_bar.show();
+            s_bar.hide();
+        });
+
     </script>
 </body>
 
