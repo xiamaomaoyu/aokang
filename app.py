@@ -64,7 +64,7 @@ def subclass101():
 @app.route('/evaluation', methods=["POST", "GET"])
 def evaluation():
     if request.method == "POST":
-        ml.send_mail('k.hao@unsw.edu.au','在线评估','send_eva',info=request.form)
+        ml.send_mail('aokang@188.com','在线评估','send_eva',info=request.form)
         return redirect(url_for('hello_world'))
     return render_template('evaluation.html')
 

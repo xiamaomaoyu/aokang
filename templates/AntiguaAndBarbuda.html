@@ -1,225 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>安提瓜和巴布达</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/static/style.css?v=1asdf22aiasdkjnkkaejflanvijpjoiasdfowqsf790">
+{% extends 'base.html' %}
+{% block body %}
+    <div class="contain" style="padding: 2% 10%;margin: 5%" >
+        <img src="../static/img/Blog/AntiguaAndBarbuda/head.jpeg" height="500" style="margin-left: 10%">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.0.0/dist/css/bootstrap.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <h2 style="margin-top: 5%; margin-bottom: 5%"> 安提瓜和巴布达 </h2>
 
-    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
-    <link href="/static/fontawesome-pro-5.8.1-web/css/all.css" rel="stylesheet"> <!--load all styles -->
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <div>
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills  " style="text-align: center">
+            <li class="nav-item">
+                <a class="nav-link displayNavPill  active" style="border-radius: 0; padding: 20px 20px;" data-toggle="tab"
+                   href="#home">安提瓜与巴布达国家介绍</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link displayNavPill" style="border-radius: 0; padding: 20px 20px;" data-toggle="tab"
+                   href="#menu1">投资移民计划</a>
+            </li>
 
-    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
-    <script src="https://unpkg.com/popper.js@1.12.9/dist/umd/popper.js"></script>
-    <script src="https://unpkg.com/bootstrap@4.0.0/dist/js/bootstrap.js"></script>
+        </ul>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-</head>
-<body>
-
-<div class="header row" style="text-align: right; padding: 1% 3%; font-size: 18px;">
-    <div class="col-xs-6 col-sm-8 col-lg-10"></div>
-    <div class="col-xs-6 col-sm-4 col-lg-2" style="color:#051c2c;">
-        <a style="color: #033663;">联系我们</a> | <a style="color: #033663;">English</a>
-    </div>
-</div>
-
-
-<div class="header row" style="min-height: 150px; ">
-    <div class="col-xs-5 col-sm-3 col-lg-2" style="padding: 1% 5%;">
-        <img style="height: 100px; " src="../static/img/logo.png">
-    </div>
-    <div class="col-xs-7 col-sm-9 col-lg-10" style="padding: 2% 0; text-align: left;
-        font-size: 40px; font-weight: bolder; color: #033663; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif">
-        澳康移民
-    </div>
-</div>
-
-<nav class="navbar navbar-inverse  navbar-expand-sm bg-light "
-     style="background-color: white;  border: none; padding: 1% 4%; margin-bottom: 0;">
-    <ul class="nav navbar-nav"
-        style="width: 100%; font-size: 30px;color: black; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif;">
-        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("hello_world") }}">Home</a></li>
-        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("about") }}">关于澳康</a></li>
-        <li style="min-width: 150px;" class="nav-item">
-            <div class="dropdown">
-                <button class="navbar-font dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #f8f9fa">澳大利亚
-                    <span class="caret"></span></button>
-                <ul class="dropdown-menu" style="min-width: 260px; line-height: 50px;">
-                    <li><a href="#">澳洲简介</a></li>
-                    <li><a href="{{ url_for("subclass485") }}">485类毕业生临时签证</a></li>
-                    <li><a href="{{ url_for("subclass186") }}">雇主担保类移民</a></li>
-                    <li><a href="{{ url_for("subclass188") }}">投资类移民</a></li>
-                    <li><a href="{{ url_for("subclass189") }}">技术类移民</a></li>
-                    <li><a href="{{ url_for("subclass101") }}">家庭团聚类移民</a></li>
-
+        <!-- Tab panes -->
+        <div class="tab-content" style=" text-align: left;">
+            <div id="home" class=" tab-pane active"><br>
+                <p>1493年，哥伦布第二次航行美洲时到达该岛，并已西班牙塞维利亚安提瓜教堂的名字命名该岛。1520年至1629年曾先后遭西班牙和法国殖民者入侵。1632年被英国占领。1667年跟住《布雷达条约》正式成为英国殖民地。1968年成为英国的联系邦并成立内部自治政府。1981年11条约1日宣布独立，成为君主立宪制国家，现为英联邦成员国。安提瓜和巴布达风景旖旎，气候宜人，比北京时差晚12小时，属于热带气候，平均气温27度，经济主要以旅游业为主，人均GDP达13500多美元，居民赋予，社会福利优越。安提瓜和巴布达奉行独立自主、和平友好的外交政策，与美国、加拿大、英国、中国、欧洲等国家保持友好关系，可以自由出入英国、加拿大、新西兰等60多个英联邦国家，畅行欧洲，全球免签138个国家。</p>
+                <p>首都：圣约翰（St. John’s）</p>
+                <p>官方语言：英语</p>
+                <p>货币：东加勒比元</p>
+                <p>汇率：1美元=2.7东加元</p>
+                <p>人口：9万（2015年）</p>
+                <p>国土面积：440平方公里</p>
+                <p>圣约翰（St. John’s）：位于安提瓜岛西北海岸，中央低地北部，濒临大西洋，在安提瓜岛西北岸小海湾畔。人口2.9万。</p>
+                <p>圣约翰是一座景色优美的海滨城镇，由于长期受殖民统治影响，城市带有明显的欧洲色彩。克拉伦斯大厦坐落在翠绿的山水中，建于1787年，格调新颖别致，它曾经是安提瓜和巴布达总督都的山间别墅，从这里可以俯瞰对面港口的景色、离圣约翰大约4公里的詹姆斯要塞，建于1703年，虽然饱经300年的日晒雨淋、海风侵蚀，纸巾仍完好地傲立在海岸，成为游客观赏的古老建筑。市政府法院大厦中的警察局，在300年前是一座兵营，高大建筑物四周筑有刺刀模样的铁栅栏，显得非常威严，给海滨小城装点上古老的风貌。圣约翰城内的维克拉伦斯公园景色优美，鸟语花香，绿树成荫，给这座海滨城市增色不少。</p>
+                <br>
+                <h4>交通</h4>
+                <p>安提瓜和巴布达位于加勒比海小安的列斯群岛北部背风群岛中，西经61°39′～61°54′、北纬17°02′～17°40′之间，南同瓜德罗普岛相望，西与圣基茨和尼维斯为邻。它由安提瓜、巴布达和雷东达三岛组成。由于地处加勒比中心地带，安巴是该地区航空交通的枢纽，首都圣约翰是天然深水港，有现代化的设施，可停靠万吨级远洋客货轮。维尔·伯德机场位于首都圣约翰东北9公里，有通往北美、欧洲和加勒比地区其他英语国家的航线</p>
+                <br>
+                <h4>经济</h4>
+                <p>安提瓜和巴布达无完整的过敏经济生产体系，是一个上中等收入的国家。2014年，人均GDP13961美元。旅游业是国民经济中最重要的支柱产业，占国民生产总值10%。农业主要产棉花、甘蔗和薯类。工业主要为农产品加工、炼油等。安提瓜和巴布达重视发展旅游业、加工业和农业，积极吸收外资，鼓励兴建公共设施和兴办合资企业。</p>
+                <br>
+                <h4>教育</h4>
+                <p>在安提瓜和巴布达本国，从小学到高中享有免费的英式教育。同时，根据加拿大英联邦奖学金计划，安提瓜公民或永久居民在英国、加拿大等英联邦国家就读可获奖学金；美国大学在安提瓜设有医学院分销，医学院学生可直接获得美国、加拿大临床工作和实习的机会，以及获得ECFMG（外国医学生医师执照考试委员会）资格认证。同时，拥有安巴护照的学生在英国毕业两年内，可以自由逗留，免工作签证。</p>
+            </div>
+            <div id="menu1" class=" tab-pane fade"><br>
+                <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
+                    <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
+                        <a style=" font-size: 15px; color: white; margin-bottom: 0;">项目优势</a>
+                    </div>
+                </div>
+                <ul class="list-with-dot">
+                    <li><p>白金护照免签证138个国家： 自由出入英国、加拿大等60多个英联邦国家，畅行欧盟及申根国，全球免签138个国家。</p></li>
+                    <li><p>一步到位简单快捷的移民方式：要求很低，无教育程度、英语水平、工作经历、经商管理要求，无移民监</p></li>
+                    <li><p>世界著名的免税天堂</p></li>
+                    <li><p>免费的英式教育:在安提瓜和巴布达本国，从小学到高中享有免费的英式教育。同事，根据加拿大英联邦奖学金计划，安提瓜公民或永久居民在英国、加拿大等英联邦国家就读可获奖学金；美国大学在安提瓜设有医学院分校，医学院学生可直接获得美国、加拿大临床实习和工作的机会，以及获得ECFMG（外国医学生医师执照考试委员会）资格认证。安巴护照的学生在英国毕业两年内，可以自由逗留，免工作签。</p></li>
+                    <li><p>丰厚的社会福利:终身享受安提瓜和巴布达公民拥有的就医、养老等多项福利。</p></li>
+                    <li><p>允许多重国际的身份：安提瓜和巴布达政府允许公民多重国际，享受安提瓜和巴布达公民的好处与优势，同时无需放弃现有国籍。</p></li>
                 </ul>
-            </div>
-        </li>
-        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("sai") }}">塞浦路斯</a></li>
-        <li style="min-width: 200px;" class="nav-item"><a href="{{ url_for("antigua") }}">安提瓜与巴布达</a></li>
-        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("evaluation") }}">在线评估</a></li>
-        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("newsletter") }}">澳康快讯</a></li>
-        <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("hello_world") }}">成功案例</a></li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input id="search_info" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 60%">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="search_button">Search</button>
-    </form>
-</nav>
-
-
-<div style="position: fixed; z-index: 1; right: 0; padding: 17px; text-align: center; width: 200px; background-color: rgba(255,255,255,0.8);">
-    <img style="width: 170px;" src="../static/img/qrcode.png">
-    <br><br>
-    <p style="line-height: normal;">联系电话：</p>
-    <p>020-87322207</p>
-</div>
-
-<div style="padding: 2% 5%; text-align: center; font-size: 18px;" >
-    <img src="../static/img/Blog/AntiguaAndBarbuda/head.jpeg" height="500">
-
-    <h2 style="margin: 50px 0 20px 0;"> 安提瓜和巴布达 </h2>
-
-    <div>
-    <!-- Nav tabs -->
-    <ul class="nav nav-pills  " style="text-align: center">
-        <li class="nav-item">
-            <a class="nav-link displayNavPill  active" style="border-radius: 0; padding: 20px 20px;" data-toggle="tab"
-               href="#home">安提瓜与巴布达国家介绍</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link displayNavPill" style="border-radius: 0; padding: 20px 20px;" data-toggle="tab"
-               href="#menu1">投资移民计划</a>
-        </li>
-
-    </ul>
-
-    <!-- Tab panes -->
-    <div class="tab-content" style=" text-align: left;">
-        <div id="home" class=" tab-pane active"><br>
-            <p>1493年，哥伦布第二次航行美洲时到达该岛，并已西班牙塞维利亚安提瓜教堂的名字命名该岛。1520年至1629年曾先后遭西班牙和法国殖民者入侵。1632年被英国占领。1667年跟住《布雷达条约》正式成为英国殖民地。1968年成为英国的联系邦并成立内部自治政府。1981年11条约1日宣布独立，成为君主立宪制国家，现为英联邦成员国。安提瓜和巴布达风景旖旎，气候宜人，比北京时差晚12小时，属于热带气候，平均气温27度，经济主要以旅游业为主，人均GDP达13500多美元，居民赋予，社会福利优越。安提瓜和巴布达奉行独立自主、和平友好的外交政策，与美国、加拿大、英国、中国、欧洲等国家保持友好关系，可以自由出入英国、加拿大、新西兰等60多个英联邦国家，畅行欧洲，全球免签138个国家。</p>
-            <p>首都：圣约翰（St. John’s）</p>
-            <p>官方语言：英语</p>
-            <p>货币：东加勒比元</p>
-            <p>汇率：1美元=2.7东加元</p>
-            <p>人口：9万（2015年）</p>
-            <p>国土面积：440平方公里</p>
-            <p>圣约翰（St. John’s）：位于安提瓜岛西北海岸，中央低地北部，濒临大西洋，在安提瓜岛西北岸小海湾畔。人口2.9万。</p>
-            <p>圣约翰是一座景色优美的海滨城镇，由于长期受殖民统治影响，城市带有明显的欧洲色彩。克拉伦斯大厦坐落在翠绿的山水中，建于1787年，格调新颖别致，它曾经是安提瓜和巴布达总督都的山间别墅，从这里可以俯瞰对面港口的景色、离圣约翰大约4公里的詹姆斯要塞，建于1703年，虽然饱经300年的日晒雨淋、海风侵蚀，纸巾仍完好地傲立在海岸，成为游客观赏的古老建筑。市政府法院大厦中的警察局，在300年前是一座兵营，高大建筑物四周筑有刺刀模样的铁栅栏，显得非常威严，给海滨小城装点上古老的风貌。圣约翰城内的维克拉伦斯公园景色优美，鸟语花香，绿树成荫，给这座海滨城市增色不少。</p>
-            <br>
-            <h4>交通</h4>
-            <p>安提瓜和巴布达位于加勒比海小安的列斯群岛北部背风群岛中，西经61°39′～61°54′、北纬17°02′～17°40′之间，南同瓜德罗普岛相望，西与圣基茨和尼维斯为邻。它由安提瓜、巴布达和雷东达三岛组成。由于地处加勒比中心地带，安巴是该地区航空交通的枢纽，首都圣约翰是天然深水港，有现代化的设施，可停靠万吨级远洋客货轮。维尔·伯德机场位于首都圣约翰东北9公里，有通往北美、欧洲和加勒比地区其他英语国家的航线</p>
-            <br>
-            <h4>经济</h4>
-            <p>安提瓜和巴布达无完整的过敏经济生产体系，是一个上中等收入的国家。2014年，人均GDP13961美元。旅游业是国民经济中最重要的支柱产业，占国民生产总值10%。农业主要产棉花、甘蔗和薯类。工业主要为农产品加工、炼油等。安提瓜和巴布达重视发展旅游业、加工业和农业，积极吸收外资，鼓励兴建公共设施和兴办合资企业。</p>
-            <br>
-            <h4>教育</h4>
-            <p>在安提瓜和巴布达本国，从小学到高中享有免费的英式教育。同时，根据加拿大英联邦奖学金计划，安提瓜公民或永久居民在英国、加拿大等英联邦国家就读可获奖学金；美国大学在安提瓜设有医学院分销，医学院学生可直接获得美国、加拿大临床工作和实习的机会，以及获得ECFMG（外国医学生医师执照考试委员会）资格认证。同时，拥有安巴护照的学生在英国毕业两年内，可以自由逗留，免工作签证。</p>
-        </div>
-        <div id="menu1" class=" tab-pane fade"><br>
-            <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
-                <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
-                    <a style=" font-size: 15px; color: white; margin-bottom: 0;">项目优势</a>
+                <br><br>
+                <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
+                    <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
+                        <a style="font-size: 15px; color: white; margin-bottom: 0;">投资方式</a>
+                    </div>
                 </div>
-            </div>
-            <ul class="list-with-dot">
-                <li><p>白金护照免签证138个国家： 自由出入英国、加拿大等60多个英联邦国家，畅行欧盟及申根国，全球免签138个国家。</p></li>
-                <li><p>一步到位简单快捷的移民方式：要求很低，无教育程度、英语水平、工作经历、经商管理要求，无移民监</p></li>
-                <li><p>世界著名的免税天堂</p></li>
-                <li><p>免费的英式教育:在安提瓜和巴布达本国，从小学到高中享有免费的英式教育。同事，根据加拿大英联邦奖学金计划，安提瓜公民或永久居民在英国、加拿大等英联邦国家就读可获奖学金；美国大学在安提瓜设有医学院分校，医学院学生可直接获得美国、加拿大临床实习和工作的机会，以及获得ECFMG（外国医学生医师执照考试委员会）资格认证。安巴护照的学生在英国毕业两年内，可以自由逗留，免工作签。</p></li>
-                <li><p>丰厚的社会福利:终身享受安提瓜和巴布达公民拥有的就医、养老等多项福利。</p></li>
-                <li><p>允许多重国际的身份：安提瓜和巴布达政府允许公民多重国际，享受安提瓜和巴布达公民的好处与优势，同时无需放弃现有国籍。</p></li>
-            </ul>
-            <br><br>
-            <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
-                <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
-                    <a style="font-size: 15px; color: white; margin-bottom: 0;">投资方式</a>
+                <ul class="list-with-dot">
+                    <li><p> 捐赠25万美元给国家发展基金</p></li>
+                    <li><p>购买40万美元以上由政府核准的地产，拥有该物业5年以上，业主可选择自由出手</p></li>
+                    <li><p>个人投资150万美元或合伙投资500万美元以上创办企业，投资期限5年</p></li>
+                </ul>
+                <br><br>
+                <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
+                    <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
+                        <a style="font-size: 15px; color: white; margin-bottom: 0;">申请条件</a>
+                    </div>
                 </div>
+                <ul class="list-with-dot">
+                    <li><p>主申请人必须满18周岁</p></li>
+                    <li><p>无犯罪记录</p></li>
+                    <li><p>身体健康</p></li>
+                    <li><p>充足经济来源证明</p></li>
+                </ul>
+                <p>副申请人包括：配偶、未满18周岁的子女，18-25周岁的在校学生，主申请人或配偶65周岁以上的父母或祖父母。</p>
             </div>
-            <ul class="list-with-dot">
-                <li><p> 捐赠25万美元给国家发展基金</p></li>
-                <li><p>购买40万美元以上由政府核准的地产，拥有该物业5年以上，业主可选择自由出手</p></li>
-                <li><p>个人投资150万美元或合伙投资500万美元以上创办企业，投资期限5年</p></li>
-            </ul>
-            <br><br>
-            <div style="width: 100%; border-bottom: #051c2c solid 1px; margin-bottom: 2%;">
-                <div style="background-color: #051c2c; width: 130px; padding: 5px 30px;">
-                    <a style="font-size: 15px; color: white; margin-bottom: 0;">申请条件</a>
-                </div>
-            </div>
-            <ul class="list-with-dot">
-                <li><p>主申请人必须满18周岁</p></li>
-                <li><p>无犯罪记录</p></li>
-                <li><p>身体健康</p></li>
-                <li><p>充足经济来源证明</p></li>
-            </ul>
-            <p>副申请人包括：配偶、未满18周岁的子女，18-25周岁的在校学生，主申请人或配偶65周岁以上的父母或祖父母。</p>
-        </div>
 
-    </div>
-</div>
-
-
-
-    </div>
-</div>
-
-
-
-<div class="footer" style="padding: 2% 5%; color: #033663; background-color: #acd9fa; text-align: center">
-    <h2>About Us</h2>    <br>
-    <p>选择澳康，就是选择了成功！</p> <br>
-    <div class="row">
-        <div class="col-xs-12 col-md-4" style="text-align: center;">
-            <img src="../static/img/QRCode.jpg">
-        </div>
-        <div class="col-xs-12 col-md-4" style="text-align: left">
-            <p>中国联系方式：</p>
-            <p>电话：(020)87322207、87322192、87322493</p>
-            <p>传真：（020）87322203</p>
-            <p>地址：广州市越秀区先烈中路69号东山广场1906室</p>
-            <br>
-        </div>
-
-        <div class="col-xs-12 col-md-4" style="text-align: left">
-            <p>澳洲联系方式：</p>
-            <p>电话：(612) 96355528</p>
-            <p>Email: houkang@tpg.com.au</p>
-            <p>地址：8B, Level 2, 48 Macquarie St. Parramatta, NSW 2150 Australia</p>
-            <br>
         </div>
     </div>
-</div>
-    <script>
-        $("#search_button").click(function () {
-           if ( $("#search_info").val() === "") {
-               alert("请输入搜索信息");
-           } else {
-               window.location.assign('/search/'+$("#search_info").val())
-           }
-        });
-    </script>
-</body>
-<footer style=" padding: 10px 5% 2px 0;  text-align: right; background-color: black; color: white">
-            <p>粤ICP备14001960号-1</p>
-</footer>
-</html>
+    </div>
+{% endblock %}

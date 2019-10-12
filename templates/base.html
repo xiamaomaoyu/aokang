@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>澳康移民</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/style.css?v=1asdf22aiasdkjnkkaejflanvijpjoiasdfowqsf790">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.0.0/dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+    <link href="/static/fontawesome-pro-5.8.1-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.9/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap@4.0.0/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- logo !-->
+    <div class="header row" style="min-height: 150px; ">
+        <div class="col-xs-5 col-sm-3 col-lg-2" style="padding: 1% 5%;">
+            <img style="height: 100px; " src="../static/img/logo.png">
+        </div>
+        <div class="col-xs-7 col-sm-9 col-lg-10" style="padding: 2% 0; text-align: left;
+            font-size: 40px; font-weight: bolder; color: #033663; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif">
+            澳康移民
+        </div>
+    </div>
+
+    <!-- 导航栏 !-->
+    <nav class="navbar navbar-inverse navbar-expand-lg bg-light "
+         style="background-color: white;  border: none; padding: 1% 4%; margin-bottom: 0;">
+        <ul id="bars" class="nav navbar-nav"
+            style="width: 100%; font-size: 30px;color: black; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif;">
+            <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("hello_world") }}">Home</a></li>
+            <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("about") }}">关于澳康</a></li>
+            <li style="min-width: 150px;" class="nav-item">
+                <div class="dropdown">
+                    <button class="navbar-font dropdown-toggle" type="button" data-toggle="dropdown" style="background-color: #f8f9fa">澳大利亚
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu" style="min-width: 260px; line-height: 50px;">
+                        <li><a href="{{ url_for("subclass485") }}">485类毕业生临时签证</a></li>
+                        <li><a href="{{ url_for("subclass186") }}">雇主担保类移民</a></li>
+                        <li><a href="{{ url_for("subclass188") }}">投资类移民</a></li>
+                        <li><a href="{{ url_for("subclass189") }}">技术类移民</a></li>
+                        <li><a href="{{ url_for("subclass101") }}">家庭团聚类移民</a></li>
+
+                    </ul>
+                </div>
+            </li>
+            <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("sai") }}">塞浦路斯</a></li>
+            <li style="min-width: 200px;" class="nav-item"><a href="{{ url_for("antigua") }}">安提瓜与巴布达</a></li>
+            <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("evaluation") }}">在线评估</a></li>
+            <li style="min-width: 120px;" class="nav-item"><a href="{{ url_for("newsletter") }}">澳康快讯</a></li>
+            <li style="min-width: 120px;" class="nav-item"><i class="fa fa-search" id="searchbar"></i></li>
+        </ul>
+
+        <div class="input-group input-group-lg" id="searin" style="display: none">
+          <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" id="search_info">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-lg"><i class="fa fa-close" id="s_c"></i></span>
+          </div>
+        </div>
+    </nav>
+
+    <!-- 名片 !-->
+    <div style="position: fixed; z-index: 1; right: 0; padding: 17px; text-align: center; width: 200px; background-color: rgba(255,255,255,0.8);">
+        <img style="width: 170px;" src="../static/img/qrcode.png">
+        <br><br>
+        <p style="line-height: normal;">联系电话：</p>
+        <p>020-87322207</p>
+    </div>
+
+    {% block body %} {% endblock %}
+
+    <!-- footer bar !-->
+    <div class="footer" style="padding: 2% 5%; color: #033663; background-color: #acd9fa; text-align: center">
+        <h2>About Us</h2>    <br>
+        <p>选择澳康，就是选择了成功！</p> <br>
+        <div class="row">
+            <div class="col-xs-12 col-md-4" style="text-align: center;">
+                <img src="../static/img/QRCode.jpg">
+            </div>
+            <div class="col-xs-12 col-md-4" style="text-align: left">
+                <p>中国联系方式：</p>
+                <p>电话：(020)87322207、87322192、87322493</p>
+                <p>传真：（020）87322203</p>
+                <p>地址：广州市越秀区先烈中路69号东山广场1906室</p>
+                <br>
+            </div>
+
+            <div class="col-xs-12 col-md-4" style="text-align: left">
+                <p>澳洲联系方式：</p>
+                <p>电话：(612) 96355528</p>
+                <p>Email: houkang@tpg.com.au</p>
+                <p>地址：8B, Level 2, 48 Macquarie St. Parramatta, NSW 2150 Australia</p>
+                <br>
+            </div>
+        </div>
+    </div>
+    <script>
+        var inputs = $("#search_info");
+        inputs.on( "keydown", function (event) {
+            if (event.which === 13) {
+                if (inputs.val() === "") {
+                   alert("请输入搜索信息");
+               } else {
+                   window.location.assign('/search/'+inputs.val())
+               }
+            }
+        });
+
+        var b_bar = $("#bars");
+        var s_bar = $("#searin");
+
+        $("#searchbar").click(function () {
+            b_bar.hide();
+            s_bar.show();
+        });
+
+        $("#s_c").click(function () {
+            b_bar.show();
+            s_bar.hide();
+        });
+
+    </script>
+</body>
+
+    <footer style=" padding: 10px 5% 2px 0;  text-align: right; background-color: black; color: white">
+        <p>粤ICP备14001960号-1</p>
+    </footer>
+
+</html>
