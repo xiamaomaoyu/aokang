@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
 {% block body %}
-    <marquee behavior="alternate" direction="up" style="height: 560px;" scrolldelay="100">
-        <div class="main-block  row" onclick="to491()" style="background-color:  #acd9fa; padding: 0 2%; text-align: center;">
+    <marquee id="mymq" behavior="alternate" direction="up" onmouseover="this.stop();" onmouseout="this.start();" style="height: 560px;" scrolldelay="100">
+        <div class="main-block  row" onclick="toNews()" style="background-color:  #acd9fa; padding: 0 2%; text-align: center;">
             <div class="col-xs-12 col-sm-12 col-lg-7" style="padding: 6% 5%; text-align: center;
                 font-size: 40px; color: #033663; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif" onclick="to491()">
                 <h1 style="font-size: 60px; font-weight: bolder;"> 重大利好消息！</h1>
                 <ul style="font-size: 50px; margin-top: 10%; margin-left: -30px; line-height: 60px;">
-                    <li onclick="to491()"> 491类签证将取代489类签证</li>
+                    <li onclick="toNews()"> 491类签证将取代489类签证</li>
                     <br>
-                    <li onclick="to491()">  494类签证将取代187类签证</li>
+                    <li onclick="toNews()">  494类签证将取代187类签证</li>
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-12 col-lg-5" style="padding: 5% 2%; text-align: center;" onclick="to491()">
@@ -19,26 +19,29 @@
                 function to491() {
                     this.window.location = "{{ url_for("subclass491") }}";
                 }
+                function toNews() {
+                    this.window.location = "{{ url_for("newsletter") }}";
+                }
             </script>
         </div>
 
-        <div class="main-block  row" onclick="to188()" style="background-color:  #acd9fa; padding: 0 2%; text-align: center;">
-            <div class="col-xs-12 col-sm-12 col-lg-5" style="padding: 5% 2%; text-align: center;" onclick="to188()">
+        <div class="main-block  row" onclick="to132()" style="background-color:  #acd9fa; padding: 0 2%; text-align: center;">
+            <div class="col-xs-12 col-sm-12 col-lg-5" style="padding: 5% 2%; text-align: center;" onclick="to132()">
                 <img style="width: calc(110% - ( ( 4% ) * 0.6 )); " src="../static/img/132subclass.jpeg">
             </div>
             <div class="col-xs-12 col-sm-12 col-lg-7" style="padding: 6% 5%; text-align: center;
-                font-size: 40px; color: #033663; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif" onclick="to188()">
-                <h1 style="font-size: 60px; font-weight: bolder;" onclick="to188()">132类商业天才移民</h1>
+                font-size: 40px; color: #033663; Font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif" onclick="to132()">
+                <h1 style="font-size: 60px; font-weight: bolder;" onclick="to132()">132类商业天才移民</h1>
                 <ul style="font-size: 30px; margin-top: 10%; margin-left: -30px; line-height: 60px;">
-                    <li onclick="to188()"> 无需打分 先拿永居 后投资</li>
+                    <li onclick="to132()"> 无需打分 先拿永居 后投资</li>
 
-                    <li onclick="to188()"> 无需面试 无需英语 无居住要求</li>
-                    <li onclick="to188()"> 澳洲唯一的一步到位全家永居的商业移民签证</li>
+                    <li onclick="to132()"> 无需面试 无需英语 无居住要求</li>
+                    <li onclick="to132()"> 澳洲唯一的一步到位全家永居的商业移民签证</li>
                 </ul>
             </div>
             <script>
-                function to188() {
-                    this.window.location = "{{ url_for("subclass188") }}";
+                function to132() {
+                    this.window.location = "{{ url_for("subclass132") }}";
                 }
             </script>
         </div>
@@ -395,7 +398,7 @@
 
 <script>
     function go485() {
-        this.window.location = "{{ url_for("subclass491") }}";
+        this.window.location = "{{ url_for("subclass485") }}";
     }
 
     function go186() {

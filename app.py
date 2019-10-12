@@ -50,6 +50,9 @@ def subclass485():
 def subclass188():
     return render_template("188Asubclass.html")
 
+@app.route('/132subclass')
+def subclass132():
+    return render_template("132subclass.html")
 
 @app.route('/189subclass')
 def subclass189():
